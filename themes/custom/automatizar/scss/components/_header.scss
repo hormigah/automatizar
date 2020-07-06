@@ -1,3 +1,11 @@
+.header {
+  &.dark {
+    background: color(background, color-1);
+  }
+}
+
+
+
 .navbar-default{
     background: color(grayscale, gray-1);
     border: 0;

@@ -57,12 +57,14 @@
   {% block navbar %}
     {%
       set navbar_classes = [
+        'header',
+        'dark',
         'navbar',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header{{ navbar_attributes.addClass(navbar_classes) }}>
       <div class="middle-bar bg-dark">
         <div class="{{ container }}">
           <div class="middle-area">{{ page.header_top }}</div>
