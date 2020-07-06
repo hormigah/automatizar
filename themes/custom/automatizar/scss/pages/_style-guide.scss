@@ -1,0 +1,33 @@
+.title-guide{
+    margin: 50px;
+    text-align: center;
+}
+.container-box{
+    box-shadow: 0px -7px 46px #00000029;
+    margin: 30px auto;
+    max-width: 1130px;
+    padding: 50px;
+    &:last-child{
+        margin-bottom: 100px;
+    }
+    .container-button{
+        display:flex;
+        .box-button{
+            width:50%;
+        }
+    }
+}
+.titles-sections{
+    margin: 50px 50px 20px;
+    text-align: center;
+}
+.etiquetas-texto{
+    color: color(controls, "dark");
+    display:flex;
+    flex-direction:column;
+}
+@include mq-max(sm){
+    .container-box{
+        width:90%;
+    }
+}
