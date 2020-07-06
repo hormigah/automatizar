@@ -68,7 +68,9 @@
           <div class="middle-area">{{ page.header_top }}</div>
         </div>
       </div>
-      <div class="sticky-header main-bar-wraper navbar-expand-lg"></div>
+      <div class="sticky-header main-bar-wraper navbar-expand-lg">
+        <div class="main-bar clearfix">{{ page.header_main }}</div>
+      </div>
       
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
