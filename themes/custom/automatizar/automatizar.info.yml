@@ -8,9 +8,11 @@ description: 'A Drupal Bootstrap 3 based sub-theme.'
 package: 'Bootstrap'
 
 regions:
+  header_top: 'Header Top'
+  header: 'Header Main'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Top Bar'
+  content_top: 'Content Top'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
