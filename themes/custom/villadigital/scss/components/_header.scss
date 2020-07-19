@@ -6,6 +6,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .region-header-top {
+      padding: 20px 0;
+      width: 200px;
+      max-width: 200px;
+      display: table;
+      float: left;
+      vertical-align: middle;
+    }
   }
 }
 
