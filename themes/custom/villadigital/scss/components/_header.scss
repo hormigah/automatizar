@@ -1,6 +1,6 @@
 .header {
   &.dark {
-    background: color(background, color-1);
+    background: color(background, color-2);
   }
   .middle-area {
     display: flex;
@@ -13,6 +13,22 @@
       display: table;
       float: left;
       vertical-align: middle;
+      &:before {
+        transform: skew(-30deg);
+        right: -140px;
+        width: 100%;
+        background: color(background, color-1);
+      }
+      &:after {
+        background: color(background, color-1);
+      }
+    }
+    .region-header-top-right {
+      .views-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 }
