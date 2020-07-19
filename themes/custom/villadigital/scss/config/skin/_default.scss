@@ -2,8 +2,8 @@
 // External Source Definitions 
 // ==========================================================================
 
-$fontFamilyBrand    : 'Roboto Condensed', sans-serif;
-$fontPrimary        : 'Roboto', sans-serif;
+$fontFamilyBrand    : 'Poppins', sans-serif;
+$fontPrimary        : 'Poppins', sans-serif;
 $fontSecondary      : 'Open Sans', sans-serif;
 
 
@@ -47,6 +47,10 @@ $grayscaleLevel-6  : #333333 !default;
 $grayscaleLevel-7  : #4A4A4A !default; 
 $grayscaleBase     : #1b1b1b !default;
 $grayscaleBlack    : #000000 !default;
+
+
+// Text Colors
+$textColor-1       : #000000 !default;
 
 // Border Colors
 $borderColor-1     : #1500dc !default;

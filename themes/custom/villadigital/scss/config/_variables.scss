@@ -52,6 +52,9 @@ $colors: (
       base     : $grayscaleBase,
       black    : $grayscaleBlack 
    ),
+   text:(
+    color-1  : $textColor-1,
+   ),
    border:(
     color-1  : $borderColor-1,
     color-2  : $borderColor-2,

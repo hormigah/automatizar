@@ -49,7 +49,7 @@
           padding: 0 10px;
           &:before {
             font: normal normal normal 12px/1 FontAwesome;
-            font-size: map-get($sizes, "thumb");
+            font-size: map-get($sizes, "half");
             display: inline-block;
             margin-right: 5px;
             color: color(background, color-2);
@@ -70,6 +70,7 @@
             font-size: map-get($sizes, "base");
             font-weight: 500;
             line-height: 24px;
+            color: color(text, color-1);
           }
         }
         .field-office-hours {
