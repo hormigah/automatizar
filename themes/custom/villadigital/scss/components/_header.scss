@@ -1,7 +1,4 @@
 .header {
-  &.dark {
-    background: color(background, color-2);
-  }
   .middle-area {
     display: flex;
     justify-content: space-between;
@@ -54,7 +51,7 @@
             font: normal normal normal 12px/1 FontAwesome;
             font-size: map-get($sizes, "thumb");
             display: inline-block;
-            margin-right: 8px;
+            margin-right: 5px;
             color: color(background, color-2);
           }
           &:first-child {
@@ -96,6 +93,9 @@
         }
       }
     }
+  }
+  .main-bar-wraper {
+    background: color(background, color-2);
   }
 }
 
