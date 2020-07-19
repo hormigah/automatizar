@@ -47,19 +47,27 @@
       .views-row {
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        align-items: center;
         .views-field {
+          padding: 0 10px;
           &:before {
             font: normal normal normal 12px/1 FontAwesome;
             font-size: map-get($sizes, "thumb");
             display: inline-block;
             margin-right: 8px;
-            vertical-align: middle;
+            color: color(background, color-2);
+          }
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
           }
         }
         .field-phone {
           &:before {
             content: "\f095";
+            vertical-align: middle;
           }
           a {
             font-size: map-get($sizes, "base");
@@ -68,6 +76,22 @@
         .field-office-hours {
           &:before {
             content: "\f017";
+            vertical-align: super;
+          }
+          ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+        }
+        .field-address {
+          &:before {
+            content: "\f041";
+            vertical-align: super;
+          }
+          .fields {
+            display: inline-block;
           }
         }
       }
