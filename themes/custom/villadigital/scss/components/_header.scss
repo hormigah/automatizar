@@ -18,25 +18,21 @@
       margin: 0;
       position: relative;
       z-index: 9;
-      &:before {
+      &:before, &:after {
         content: "";
+        background: color(background, color-1);
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        z-index: -1;
+      }
+      &:before {
         transform: skew(-30deg);
         right: -140px;
         width: 100%;
-        background: color(background, color-1);
-        position: absolute;
-        bottom: 0;
-        height: 100%;
-        z-index: -1;
         border-right: 3px solid color(border, color-1);
       }
       &:after {
-        content: "";
-        background: color(background, color-1);
-        position: absolute;
-        bottom: 0;
-        height: 100%;
-        z-index: -1;
         right: 10%;
         width: 2000px;
       }
@@ -115,28 +111,28 @@
         position: relative;
         width: 20%;
         float: right;
-        padding: 0px 0 2px 0;
+        padding: 20px 0 16px 0;
         z-index: 9;
-        &:before {
+        &:before, &:after {
           width: 100%;
-          left: -25px;
           content: "";
           position: absolute;
           bottom: 0;
           height: 100%;
           z-index: -1;
-          transform: skew(30deg);
           background: color(background, color-1);
         }
+        &:before {
+          left: -25px;
+          transform: skew(30deg);
+        }
         &:after {
-          width: 100%;
           right: -50px;
-          content: "";
-          position: absolute;
-          bottom: 0;
-          height: 100%;
-          z-index: -1;
-          background: color(background, color-1);
+        }
+        .social-network {
+          display: inline-block;
+          font-size: map-get($sizes, "half");
+          margin: 0 10px;
         }
       }
     }
@@ -158,12 +154,19 @@
         padding: 0;
     }
     .navbar-nav{
-        margin: 0;
-        li{
-            a{
-                color: color(controls, base);
-            }
+      margin: 0;
+      li {
+        border: 1px solid color(text, color-2);
+        border-width: 0 0 0 1px;
+        padding: 10px 15px 10px 15px;
+        a {
+          color: color(text, color-2);
+          font-weight: 500;
         }
+        &:last-child {
+          border-right: 1px solid color(text, color-2);
+        }
+      }
     }
 }
 
