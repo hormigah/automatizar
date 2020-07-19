@@ -3,6 +3,11 @@ framework:
     theme:
       css/style.css: {}
 
+fonts:
+  css:
+    theme:
+      vendor/font-awesome/css/font-awesome.min.css: {}
+      
 # Uncomment for LESS source JavaScript files.
 #  js:
 #    bootstrap/js/affix.js: {}
