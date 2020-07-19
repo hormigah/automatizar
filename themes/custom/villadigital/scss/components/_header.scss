@@ -68,6 +68,8 @@
           }
           a {
             font-size: map-get($sizes, "base");
+            font-weight: 500;
+            line-height: 24px;
           }
         }
         .field-office-hours {
