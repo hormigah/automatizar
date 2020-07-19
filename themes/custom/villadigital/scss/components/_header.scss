@@ -13,14 +13,34 @@
       display: table;
       float: left;
       vertical-align: middle;
+      margin: 0;
+      position: relative;
+      z-index: 9;
       &:before {
+        content: "";
         transform: skew(-30deg);
         right: -140px;
         width: 100%;
         background: color(background, color-1);
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        z-index: -1;
+        border-right: 3px solid color(border, color-1);
       }
       &:after {
+        content: "";
         background: color(background, color-1);
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        z-index: -1;
+        right: 10%;
+        width: 2000px;
+      }
+      a {
+        display: table-cell;
+        vertical-align: middle;
       }
     }
     .region-header-top-right {
