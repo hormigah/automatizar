@@ -48,6 +48,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .field-phone {
+          &:before {
+            font: normal normal normal 12px/1 FontAwesome;
+            font-size: map-get($sizes, "base");
+            display: inline-block;
+            margin-right: 3px;
+            content: "\f095";
+          }
+        }
       }
     }
   }
