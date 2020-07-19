@@ -72,9 +72,11 @@
       </div>
     </div>
     <div class="sticky-header main-bar-wraper navbar-expand-lg">
-      <div class="main-bar {{ container }} clearfix">
-        {{ page.header_main }}
-        {{ page.header_main_right }}
+      <div class="main-bar clearfix">
+        <div class="{{ container }}">
+          {{ page.header_main }}
+          {{ page.header_main_right }}
+        </div>
       </div>
     </div>
 
