@@ -871,14 +871,15 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
 }
 
-/* line 54, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 55, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .views-field {
   padding: 0 10px;
 }
 
-/* line 56, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 57, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .views-field:before {
   font: normal normal normal 12px/1 FontAwesome;
   font-size: 1.5rem;
@@ -887,25 +888,24 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   color: #1500dc;
 }
 
-/* line 63, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 64, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .views-field:first-child {
   padding-left: 0;
 }
 
-/* line 66, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 67, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .views-field:last-child {
   padding-right: 0;
 }
 
-/* line 71, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 72, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .field-phone:before {
   content: "\f095";
   vertical-align: middle;
 }
 
-/* line 75, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+/* line 76, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top-right .views-row .field-phone a {
-  font-weight: 500;
   line-height: 24px;
   color: #000000;
 }
