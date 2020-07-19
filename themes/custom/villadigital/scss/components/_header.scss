@@ -47,14 +47,27 @@
       .views-row {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        .field-phone {
+        align-items: end;
+        .views-field {
           &:before {
             font: normal normal normal 12px/1 FontAwesome;
-            font-size: map-get($sizes, "base");
+            font-size: map-get($sizes, "thumb");
             display: inline-block;
-            margin-right: 3px;
+            margin-right: 8px;
+            vertical-align: middle;
+          }
+        }
+        .field-phone {
+          &:before {
             content: "\f095";
+          }
+          a {
+            font-size: map-get($sizes, "base");
+          }
+        }
+        .field-office-hours {
+          &:before {
+            content: "\f017";
           }
         }
       }
