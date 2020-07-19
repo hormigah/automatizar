@@ -1,4 +1,9 @@
 .header {
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
   .middle-area {
     display: flex;
     justify-content: space-between;
