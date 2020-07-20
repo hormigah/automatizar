@@ -8,10 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .region-header-top {
-      padding: 20px 0;
-      width: 200px;
-      max-width: 200px;
+    .region-header-top {      
       display: table;
       float: left;
       vertical-align: middle;
@@ -151,6 +148,11 @@
 @include mq-min(lg) {
   .header {
     .middle-area {
+      .region-header-top {
+        padding: 20px 0;
+        width: 200px;
+        max-width: 200px;
+      }
       .region-header-top-right {
         .block-views-blockcompany-contact-information-block-1 {
           display: block;
