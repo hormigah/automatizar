@@ -27,9 +27,11 @@ class SideBarButton extends BlockBase {
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>',
       '#attributes' => [
-        'class' => ['navbar-toggle'],
-        'data-toggle' => 'collapse',
-        'data-target' => '#navbar-collapse',
+        'class' => ['sidebar-toggle'],
+        'id' => 'sidebar-button',
+      ],
+      '#attached' => [
+        'library' => ['portal/sidebar'],
       ],
     ];
     

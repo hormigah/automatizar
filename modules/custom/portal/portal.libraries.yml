@@ -1,0 +1,11 @@
+admin:
+  version: VERSION
+  js:
+    js/sidebar.js: {}
+  css:
+    theme:
+      css/sidebar.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
