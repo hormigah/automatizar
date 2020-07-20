@@ -1,8 +1,23 @@
 .header {
+  background: color(background, color-3);
+  border: 0;
+  border-radius: 0;
   .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+  }
+  .navbar-nav{
+    margin: 0;
+    li {
+      border-bottom: 1px solid color(text, color-2);
+      padding: 5px;
+      margin: 0 25px;
+      a {
+        color: color(text, color-1);
+        font-weight: 500;
+      }
+    }
   }
   .middle-area {
     display: flex;
@@ -87,7 +102,7 @@
             }
           }
           &:after {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.3);
             content: "";
             height: 100%;
             left: 0;
@@ -138,11 +153,9 @@
         .social-network {
           display: inline-block;
           font-size: map-get($sizes, "half");
-          margin: 0 10px;
           a {
-            color: color(text, color-3);
+            color: color(text, color-4);
           }
-          
         }
       }
     }
@@ -161,6 +174,20 @@
         margin: auto;
         text-align: center;
       }
+      .view-id-social_networks {
+        margin-top: 20px;
+        text-align: center;
+        .social-network {
+          .fa {
+            width: 28px;
+            height: 28px;
+            padding: 0;
+            line-height: 28px;
+            background-color: color(background, color-2);
+            border-radius: 4px;
+          }
+        }
+      }
     }
   }
 }
@@ -168,31 +195,13 @@
 
 
 .navbar-default{
-    background: color(grayscale, gray-1);
-    border: 0;
-    border-radius: 0;
-    &.container{
+    &.container {
         max-width: 100%;
         width: 100%;
     }
     .navbar-collapse{
         margin: 0;
         padding: 0;
-    }
-    .navbar-nav{
-      margin: 0;
-      li {
-        border: 1px solid color(text, color-2);
-        border-width: 0 0 0 1px;
-        padding: 10px 15px 10px 15px;
-        a {
-          color: color(text, color-2);
-          font-weight: 500;
-        }
-        &:last-child {
-          border-right: 1px solid color(text, color-2);
-        }
-      }
     }
 }
 
@@ -218,6 +227,21 @@
       padding-left: 50px;
       padding-right: 50px;
     }
+    .navbar-nav {
+      margin: 0;
+      li {
+        border: 1px solid color(text, color-2);
+        border-width: 0 0 0 1px;
+        padding: 10px 15px 10px 15px;
+        margin: 0;
+        a {
+          color: color(text, color-2);
+        }
+        &:last-child {
+          border-right: 1px solid color(text, color-2);
+        }
+      }
+    }
     .main-bar-wraper {
       display: block;
       background: color(background, color-2);
@@ -234,6 +258,12 @@
           float: right;
           padding: 20px 0 16px 0;
           z-index: 9;
+          .social-network {
+            margin: 0 10px;
+            a {
+              color: color(text, color-3);
+            }
+          }
         }
       }
     }
