@@ -43,6 +43,42 @@
       .block-views-blockcompany-contact-information-block-1 {
         display: none;
       }
+      .views-row {
+        font-weight: 500;
+      }
+      .navbar-toggle {
+        border-color: color(border, color-1);
+        .icon-bar {
+          background-color: color(background, color-2);
+          transform: rotate(0);
+          transition: 0.25s ease-in-out;
+          &:nth-child(2) {
+            top: 0;
+          }
+          &:nth-child(3) {
+            top: 7px;
+          }
+          &:nth-child(4) {
+            top: 14px;
+          }
+        }
+        &.open {
+          .icon-bar {
+            &:nth-child(2) {
+              top: 7px;
+              transform: rotate(135deg);
+            }
+            &:nth-child(3) {
+              opacity: 0;
+              left: -60px;
+            }
+            &:nth-child(4) {
+              top: 7px;
+              transform: rotate(-135deg);
+            }
+          }
+        }
+      }
     }
   }
   .main-bar-wraper {
@@ -165,7 +201,6 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-weight: 500;
           .views-field {
             padding: 0 10px;
             &:before {
