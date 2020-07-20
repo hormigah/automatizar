@@ -21,6 +21,7 @@
       $(context).find('#sidebar-button').once('sidebar-button').each(function () {
         $(this).on('click', function () {
           $(this).toggleClass('open');
+          $('.main-bar-wraper').toggleClass('show');
         });
         
       });
