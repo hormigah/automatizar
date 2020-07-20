@@ -117,7 +117,7 @@ hr {
   line-height: 3.125rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 539px) {
   /* line 23, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_extends.scss */
   .title {
     font-size: 2.25rem;
@@ -214,7 +214,7 @@ ol li:before {
   content: counters(item, ".") ". ";
 }
 
-@media (max-width: 599px) {
+@media (max-width: 539px) {
   /* line 71, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   h1 {
     font-size: 2.25rem;
@@ -257,7 +257,7 @@ ol li:before {
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
   /* line 1, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
   .btn {
     width: auto;
@@ -844,7 +844,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   transform: skew(-30deg);
   right: -140px;
   width: 100%;
-  border-right: 3px solid #1500dc;
+  border-right: 3px solid #0062A3;
 }
 
 /* line 35, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
@@ -883,7 +883,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   font-size: 1.5rem;
   display: inline-block;
   margin-right: 5px;
-  color: #1500dc;
+  color: #0062A3;
 }
 
 /* line 60, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
@@ -935,7 +935,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 
 /* line 101, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .main-bar-wraper {
-  background: #1500dc;
+  background: #0062A3;
 }
 
 /* line 103, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
@@ -1045,7 +1045,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   background: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 539px) {
   /* line 189, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle {
     background-color: transparent;
@@ -1182,7 +1182,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   flex-direction: column;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 539px) {
   /* line 30, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/pages/_style-guide.scss */
   .container-box {
     width: 90%;
