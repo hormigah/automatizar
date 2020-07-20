@@ -1,4 +1,4 @@
-admin:
+sidebar:
   version: VERSION
   js:
     js/sidebar.js: {}
