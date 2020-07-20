@@ -43,7 +43,9 @@
       }
     }
     .region-header-top-right {
-      display: none;
+      .block-views-blockcompany-contact-information-block-1 {
+        display: none;
+      }
     }
   }
   .main-bar-wraper {
@@ -150,8 +152,10 @@
   .header {
     .middle-area {
       .region-header-top-right {
-        font-size: map-get($sizes, "small");
-        display: block;
+        .block-views-blockcompany-contact-information-block-1 {
+          display: block;
+          font-size: map-get($sizes, "small");
+        }
         .views-row {
           display: flex;
           justify-content: space-between;
