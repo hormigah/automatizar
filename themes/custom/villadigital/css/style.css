@@ -847,7 +847,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 
 /* line 33, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
 .header .middle-area .region-header-top:after {
-  right: 10%;
+  right: -230%;
   width: 2000px;
 }
 
@@ -994,23 +994,27 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     width: 200px;
     max-width: 200px;
   }
-  /* line 157, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 155, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  .header .middle-area .region-header-top:after {
+    right: 10%;
+  }
+  /* line 160, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .block-views-blockcompany-contact-information-block-1 {
     display: block;
     font-size: 0.875rem;
   }
-  /* line 161, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 164, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
   }
-  /* line 166, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 169, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .views-field {
     padding: 0 10px;
   }
-  /* line 168, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 171, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .views-field:before {
     font: normal normal normal 12px/1 FontAwesome;
     font-size: 1.5rem;
@@ -1018,49 +1022,49 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     margin-right: 5px;
     color: #0062A3;
   }
-  /* line 175, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 178, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .views-field:first-child {
     padding-left: 0;
   }
-  /* line 178, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 181, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .views-field:last-child {
     padding-right: 0;
   }
-  /* line 183, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 186, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-phone:before {
     content: "\f095";
     vertical-align: middle;
   }
-  /* line 187, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 190, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-phone a {
     line-height: 24px;
     color: #000000;
   }
-  /* line 193, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 196, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-office-hours:before {
     content: "\f017";
     vertical-align: super;
   }
-  /* line 197, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 200, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-office-hours ul {
     display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  /* line 205, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 208, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-address:before {
     content: "\f041";
     vertical-align: super;
   }
-  /* line 209, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 212, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top-right .views-row .field-address .fields {
     display: inline-block;
   }
 }
 
 @media (max-width: 539px) {
-  /* line 231, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 234, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle {
     background-color: transparent;
     border: none;
@@ -1069,26 +1073,26 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     top: 3px;
     transition: transform 0.5s ease-in-out;
   }
-  /* line 238, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 241, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle span {
     left: 0;
     opacity: 1;
     position: relative;
     transform: rotate(0deg);
   }
-  /* line 243, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 246, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle span:nth-child(2), .navbar-default .container .navbar-toggle span:nth-child(4) {
     transition: transform 0.5s ease-in-out;
   }
-  /* line 247, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 250, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle span.sr-only {
     display: none;
   }
-  /* line 251, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 254, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle:not(.collapsed) {
     top: 3px;
   }
-  /* line 254, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 257, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle:not(.collapsed) span:nth-child(2) {
     left: 12px;
     position: absolute;
@@ -1096,13 +1100,13 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     top: 13px;
     transform: rotate(135deg);
   }
-  /* line 261, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 264, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle:not(.collapsed) span:nth-child(3) {
     background-color: transparent;
     height: 12px;
     visibility: hidden;
   }
-  /* line 266, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 269, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-toggle:not(.collapsed) span:nth-child(4) {
     left: 12px;
     opacity: 0.9;
@@ -1110,7 +1114,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     top: 9px;
     transform: rotate(-135deg);
   }
-  /* line 276, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 279, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-collapse {
     background: #f2f2f2;
     display: block;
@@ -1123,24 +1127,24 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     z-index: 9;
     transition: all 0.5s;
   }
-  /* line 287, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 290, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-collapse.collapsing {
     display: block;
     height: 100% !important;
     width: 100%;
   }
-  /* line 292, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 295, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-collapse.in {
     right: -0px;
     top: 55px;
     transition: all 0.5s;
   }
-  /* line 297, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 300, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .navbar-default .container .navbar-collapse.out {
     right: 10px;
     transition: all 0.5s;
   }
-  /* line 305, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
+  /* line 308, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .menu li {
     display: block;
   }

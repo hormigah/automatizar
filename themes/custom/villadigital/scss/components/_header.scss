@@ -31,7 +31,7 @@
         border-right: 3px solid color(border, color-1);
       }
       &:after {
-        right: 10%;
+        right: -230%;
         width: 2000px;
       }
       a {
@@ -152,6 +152,9 @@
         padding: 20px 0;
         width: 200px;
         max-width: 200px;
+        &:after {
+          right: 10%;
+        }
       }
       .region-header-top-right {
         .block-views-blockcompany-contact-information-block-1 {
