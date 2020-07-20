@@ -1,7 +1,7 @@
 .header {
   .container-fluid {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
   }
   .middle-area {
@@ -43,60 +43,7 @@
       }
     }
     .region-header-top-right {
-      font-size: map-get($sizes, "small");
-      .views-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 500;
-        .views-field {
-          padding: 0 10px;
-          &:before {
-            font: normal normal normal 12px/1 FontAwesome;
-            font-size: map-get($sizes, "half");
-            display: inline-block;
-            margin-right: 5px;
-            color: color(text, color-3);
-          }
-          &:first-child {
-            padding-left: 0;
-          }
-          &:last-child {
-            padding-right: 0;
-          }
-        }
-        .field-phone {
-          &:before {
-            content: "\f095";
-            vertical-align: middle;
-          }
-          a {
-            line-height: 24px;
-            color: color(text, color-1);
-          }
-        }
-        .field-office-hours {
-          &:before {
-            content: "\f017";
-            vertical-align: super;
-          }
-          ul {
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-          }
-        }
-        .field-address {
-          &:before {
-            content: "\f041";
-            vertical-align: super;
-          }
-          .fields {
-            display: inline-block;
-          }
-        }
-      }
+      display: none;
     }
   }
   .main-bar-wraper {
@@ -187,6 +134,90 @@
         }
     }
 }
+
+
+@include mq-min(sm) {
+}
+@include mq-min(md) {
+  .header {
+    .container-fluid {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+@include mq-min(lg) {
+  .header {
+    .middle-area {
+      .region-header-top-right {
+        font-size: map-get($sizes, "small");
+        display: block;
+        .views-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 500;
+          .views-field {
+            padding: 0 10px;
+            &:before {
+              font: normal normal normal 12px/1 FontAwesome;
+              font-size: map-get($sizes, "half");
+              display: inline-block;
+              margin-right: 5px;
+              color: color(text, color-3);
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+          .field-phone {
+            &:before {
+              content: "\f095";
+              vertical-align: middle;
+            }
+            a {
+              line-height: 24px;
+              color: color(text, color-1);
+            }
+          }
+          .field-office-hours {
+            &:before {
+              content: "\f017";
+              vertical-align: super;
+            }
+            ul {
+              display: inline-block;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+            }
+          }
+          .field-address {
+            &:before {
+              content: "\f041";
+              vertical-align: super;
+            }
+            .fields {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mq-min(xl) {
+  
+}
+
+
+
+
+
+
 
 @include mq-max(sm) {
     .navbar-default{
