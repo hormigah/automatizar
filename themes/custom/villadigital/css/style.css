@@ -1105,7 +1105,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   .header .main-bar-wraper {
     display: block;
     background: #0062A3;
-    overflow: auto;
+    overflow: initial;
     position: initial;
     width: auto;
     height: auto;

@@ -79,32 +79,6 @@
         </div>
       </div>
     </div>
-
-    {% if not navbar_attributes.hasClass(container) %}
-      <div class="{{ container }}">
-    {% endif %}
-    <div class="navbar-header">
-      {{ page.navigation }}
-      {# .btn-navbar is used as the toggle for collapsed navbar content #}
-      {% if page.navigation_collapsible %}
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      {% endif %}
-    </div>
-
-    {# Navigation (collapsible) #}
-    {% if page.navigation_collapsible %}
-      <div id="navbar-collapse" class="navbar-collapse collapse">
-        {{ page.navigation_collapsible }}
-      </div>
-    {% endif %}
-    {% if not navbar_attributes.hasClass(container) %}
-      </div>
-    {% endif %}
   </header>
 {% endblock %}
 
@@ -178,7 +152,9 @@
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
+      {{ page.footer_top }}
       {{ page.footer }}
+      {{ page.footer_bottom }}
     </footer>
   {% endblock %}
 {% endif %}
