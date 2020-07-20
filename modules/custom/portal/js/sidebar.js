@@ -19,7 +19,10 @@
   Drupal.behaviors.sideBar = {
     attach: function (context, settings) {
       $(context).find('#sidebar-button').once('sidebar-button').each(function () {
-        $(this).toggleClass('open');
+        $(this).on('click', function () {
+          $(this).toggleClass('open');
+        });
+        
       });
     }
   };
