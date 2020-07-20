@@ -20,7 +20,8 @@ class SideBarButton extends BlockBase {
   public function build() {
     $content = [];
     $content['button'] = [
-      '#type' => 'button',
+      '#type' => 'html_tag',
+      '#tag' => 'button',
       '#value' => '<span class="sr-only">' . $this->t('Toggle navigation') . '</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
