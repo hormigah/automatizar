@@ -20,6 +20,7 @@
     }
     .block-views-blocksocial-networks-block-1 {
       font-size: map-get($sizes, "thumb");
+      position: relative;
       .block-title {
         display: inline-block;        
         margin-right: 10px;
@@ -46,7 +47,7 @@
     }
     .region-footer-bottom {
       border-top: 1px solid color(border, color-3);
-      font-size: map-get($sizes, "base");
+      font-size: map-get($sizes, "small");
       padding: 10px 0;
     }
   }
