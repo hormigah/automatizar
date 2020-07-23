@@ -1,6 +1,53 @@
-.footer{
-    background: color(grayscale, gray-1);
-    border: 0;
-    margin-top: map-get($sizes, half );
-    padding: 10px 0;
+.footer {
+  color: color(text, color-2);
+  padding: 0;
+  border-color: transparent;
+  .region-footer-top {
+    position: relative;
+    padding: 20px 30px;
+    width: 100%;
+    margin: 0 0 -15px;
+    &:before {
+      width: 100%;
+      left: -50%;
+      z-index: 0;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      transform: skew(30deg);
+      background-color: color(background, color-2);
+    }
+    .block-views-blocksocial-networks-block-1 {
+      font-size: map-get($sizes, "thumb");
+      .block-title {
+        display: inline-block;        
+        margin-right: 10px;
+      }
+      .form-group {
+        display: inline-block;
+        a {
+          color: color(text, color-2);
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .footer-wrapper {
+    background: color(background, color-4);
+    .region-footer {
+      padding-top: 50px;
+      h2 {
+        color: color(text, color-4);
+        font-size: map-get($sizes, "thumb");
+        text-transform: uppercase;
+      }
+    }
+    .region-footer-bottom {
+      border-top: 1px solid color(border, color-3);
+      font-size: map-get($sizes, "base");
+      padding: 10px 0;
+    }
+  }
 }

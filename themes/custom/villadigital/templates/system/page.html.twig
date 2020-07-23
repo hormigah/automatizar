@@ -153,8 +153,12 @@
   {% block footer %}
     <footer class="footer" role="contentinfo">
       {{ page.footer_top }}
-      {{ page.footer }}
-      {{ page.footer_bottom }}
+      <div class="footer-wrapper">
+        <div class="container">
+          {{ page.footer }}
+          {{ page.footer_bottom }}
+        </div>
+      </div>
     </footer>
   {% endblock %}
 {% endif %}
