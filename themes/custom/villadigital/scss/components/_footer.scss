@@ -70,6 +70,24 @@
       }
       #block-compania {
         margin-right: 15px;
+        .menu--footer {
+          li {
+            display: flex;
+            &:before {
+              content: "\f105";
+              font-family: FontAwesome;
+              padding: 3px;
+            }
+            a {
+              color: color(text, color-2);
+              padding: 5px;
+              &:hover {
+                text-decoration: underline;
+              }
+              
+            }
+          }
+        }
       }
     }
     .region-footer-bottom {
