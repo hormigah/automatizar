@@ -20,9 +20,6 @@
     }
   }
   .middle-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .region-header-top {      
       display: table;
       float: left;
@@ -41,15 +38,17 @@
       }
       &:before {
         transform: skew(-30deg);
-        right: -140px;
+        right: -50px;
         width: 100%;
         border-right: 3px solid color(border, color-1);
       }
       &:after {
-        right: -230%;
+        right: 0;
         width: 2000px;
       }
       .logo {
+        width: 200px;
+        margin-top: 10px;
         img {
           width: 100%;
         }
@@ -73,6 +72,7 @@
         transform: rotate(0);
         transition: 0.5s ease-in-out;
         cursor: pointer;
+        margin-top: 12px;
         .icon-bar {
           background-color: color(background, color-2);
           transform: rotate(0);
@@ -243,6 +243,24 @@
         }
         &:last-child {
           border-right: 1px solid color(text, color-2);
+        }
+      }
+    }
+    .middle-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .region-header-top {
+        padding-top: 5px;
+        &:before {
+          right: -140px;
+        }
+        &:after {
+          right: -230%;
+        }
+        .logo {
+          width: auto;
+          margin-top: 0;
         }
       }
     }
