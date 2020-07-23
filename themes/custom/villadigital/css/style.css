@@ -1177,7 +1177,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 @media (min-width: 960px) {
   /* line 304, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top {
-    padding: 20px 0;
+    padding: 15px 0 5px;
     width: 200px;
     max-width: 200px;
   }
@@ -1346,7 +1346,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 /* line 5, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .region-footer-top {
   position: relative;
-  padding: 20px 30px;
+  padding: 10px 0;
   width: 100%;
   margin: 0 0 -15px;
 }
@@ -1354,7 +1354,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 /* line 10, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .region-footer-top:before {
   width: 100%;
-  left: -50%;
+  left: -10%;
   z-index: 0;
   content: "";
   position: absolute;
@@ -1396,7 +1396,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 /* line 40, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .footer-wrapper .region-footer {
   padding-top: 50px;
-  display: flex;
+  display: block;
 }
 
 /* line 43, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
@@ -1408,22 +1408,41 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 
 /* line 48, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .footer-wrapper .region-footer #block-views-block-company-contact-information-block-2 {
-  margin-right: 15px;
-  width: 30%;
+  width: 100%;
   font-size: 0.875rem;
 }
 
-/* line 53, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+/* line 52, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .footer-wrapper .region-footer #block-compania {
   margin-right: 15px;
 }
 
-/* line 57, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+/* line 56, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .footer-wrapper .region-footer-bottom {
   border-top: 1px solid #333333;
   font-size: 0.875rem;
   padding: 10px 0;
   margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+  /* line 71, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  .footer .region-footer-top {
+    padding: 20px 30px;
+  }
+  /* line 73, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  .footer .region-footer-top:before {
+    left: -50%;
+  }
+  /* line 78, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  .footer .footer-wrapper .region-footer {
+    display: flex;
+  }
+  /* line 80, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  .footer .footer-wrapper .region-footer #block-views-block-company-contact-information-block-2 {
+    width: 30%;
+    margin-right: 15px;
+  }
 }
 
 /* line 1, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/pages/_style-guide.scss */

@@ -4,12 +4,12 @@
   border-color: transparent;
   .region-footer-top {
     position: relative;
-    padding: 20px 30px;
+    padding: 10px 0;
     width: 100%;
     margin: 0 0 -15px;
     &:before {
       width: 100%;
-      left: -50%;
+      left: -10%;
       z-index: 0;
       content: "";
       position: absolute;
@@ -39,15 +39,14 @@
     background: color(background, color-4);
     .region-footer {
       padding-top: 50px;
-      display: flex;
+      display: block;
       h2 {
         color: color(text, color-4);
         font-size: map-get($sizes, "thumb");
         text-transform: uppercase;
       }
       #block-views-block-company-contact-information-block-2 {
-        margin-right: 15px;
-        width: 30%;
+        width: 100%;
         font-size: map-get($sizes, "small");
       }
       #block-compania {
@@ -61,4 +60,34 @@
       margin-top: 10px;
     }
   }
+}
+
+
+
+@include mq-min(sm) {
+}
+@include mq-min(md) {
+  .footer {
+    .region-footer-top {
+      padding: 20px 30px;
+      &:before {
+        left: -50%;
+      }
+    }
+    .footer-wrapper {
+      .region-footer {
+        display: flex;
+        #block-views-block-company-contact-information-block-2 {
+          width: 30%;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+@include mq-min(lg) {
+  
+}
+@include mq-min(xl) {
+  
 }
