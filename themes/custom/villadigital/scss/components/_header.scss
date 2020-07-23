@@ -321,7 +321,6 @@
           .views-field {
             padding: 0 10px;
             &:before {
-              font: normal normal normal 12px/1 FontAwesome;
               font-size: map-get($sizes, "half");
               display: inline-block;
               margin-right: 5px;
@@ -336,11 +335,9 @@
           }
           .field-phone {
             &:before {
-              content: "\f095";
               vertical-align: middle;
             }
             a {
-              line-height: 24px;
               color: color(text, color-1);
             }
           }
@@ -358,7 +355,6 @@
           }
           .field-address {
             &:before {
-              content: "\f041";
               vertical-align: super;
             }
             .fields {

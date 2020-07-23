@@ -48,6 +48,25 @@
       #block-views-block-company-contact-information-block-2 {
         width: 100%;
         font-size: map-get($sizes, "small");
+        .views-field {
+          display: flex;
+        }
+        .field-phone {
+          &:before {
+            margin-right: 10px;
+          }
+          a {
+            color: color(text, color-2);
+          }
+        }
+        .field-address {
+          &:before {
+            margin-right: 15px;
+          }
+          .fields {
+            width: 90%;
+          }
+        }
       }
       #block-compania {
         margin-right: 15px;

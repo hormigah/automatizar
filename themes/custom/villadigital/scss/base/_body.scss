@@ -91,3 +91,24 @@ ol{
 .social-network {
   display: inline-block;
 }
+.view-company-contact-information {
+  .views-field {
+    &:before {
+      font: normal normal normal 12px/1 FontAwesome;
+      font-size: map-get($sizes, "half");
+    }
+  }
+  .field-phone {
+    &:before {
+      content: "\f095";
+    }
+    a {
+      line-height: 24px;
+    }
+  }
+  .field-address {
+    &:before {
+      content: "\f041";
+    }
+  }
+}
