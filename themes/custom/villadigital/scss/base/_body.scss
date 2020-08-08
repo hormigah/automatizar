@@ -117,4 +117,28 @@ ol{
   width: 100vw;
   margin-left: 50% !important;
   transform: translateX(-50vw);
+  .fields-text {
+    position: relative;
+    color: color(text, color-4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .field--name-field-body {
+      position: absolute;
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      font-size: map-get($sizes, "half");
+      width: 50%;
+      p {
+      }
+    }
+  }
+  .field--name-field-image {
+    img {
+      width: 100%;
+    }
+  }
 }

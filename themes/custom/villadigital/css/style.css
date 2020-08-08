@@ -275,6 +275,32 @@ ol li:before {
   transform: translateX(-50vw);
 }
 
+/* line 120, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+#block-highlight .fields-text {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 126, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+#block-highlight .fields-text .field--name-field-body {
+  position: absolute;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+/* line 140, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+#block-highlight .field--name-field-image img {
+  width: 100%;
+}
+
 /* line 1, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
 .btn {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
