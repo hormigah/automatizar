@@ -311,6 +311,19 @@ ol li:before {
   width: 100%;
 }
 
+/* line 152, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.path-node .field--name-field-cover {
+  padding: 0 !important;
+  width: 100vw;
+  margin-left: 50% !important;
+  transform: translateX(-50vw);
+}
+
+/* line 158, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.path-node .field--name-node-title {
+  text-align: center;
+}
+
 /* line 1, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
 .btn {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);

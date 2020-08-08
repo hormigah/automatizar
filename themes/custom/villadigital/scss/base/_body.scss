@@ -148,3 +148,14 @@ ol{
     }
   }
 }
+.path-node {
+  .field--name-field-cover {
+    padding: 0 !important;
+    width: 100vw;
+    margin-left: 50% !important;
+    transform: translateX(-50vw);
+  }
+  .field--name-node-title {
+    text-align: center;
+  }
+}
