@@ -292,7 +292,7 @@ ol li:before {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   width: 50%;
 }
 
@@ -303,7 +303,7 @@ ol li:before {
 
 /* line 140, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .fields-text .hl-links .btn {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* line 146, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */

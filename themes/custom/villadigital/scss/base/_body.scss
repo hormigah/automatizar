@@ -130,7 +130,7 @@ ol{
       flex-direction: column;
       flex-basis: 100%;
       flex: 1;
-      font-size: map-get($sizes, "medium");
+      font-size: map-get($sizes, "half");
       width: 50%;
       p {
       }
@@ -138,7 +138,7 @@ ol{
     .hl-links {
       margin-top: 20px;
       .btn {
-        font-size: map-get($sizes, "half");
+        font-size: map-get($sizes, "thumb");
       }
     }
   }
