@@ -30,7 +30,7 @@
    }
    &.btn-success,
    &.btn-primary {
-      @include button( color( primary, base ) );
+      @include button( color( button, color-1 ) );
       &.outline {
          @include button( transparent, color( primary, base ) );
          border: .15rem solid color( primary, base );
