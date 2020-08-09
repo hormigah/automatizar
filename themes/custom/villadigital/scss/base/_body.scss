@@ -159,6 +159,11 @@ h6{
     }
   }
 }
+.path-frontpage {
+  .page-header {
+    display: none;
+  }
+}
 .path-node {
   .field--name-field-cover {
     padding: 0 !important;

@@ -14,7 +14,6 @@ regions:
   header_main_right: 'Header main right'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  content_top: 'Content Top'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
