@@ -177,6 +177,15 @@ h6{
   
 }
 @include mq-min(md) {
+  .main-container {
+    .region-content {
+      section {
+        .block-title {
+          font-size: map-get($sizes, "large");
+        }
+      }
+    }
+  }
 }
 @include mq-min(lg) {
   
