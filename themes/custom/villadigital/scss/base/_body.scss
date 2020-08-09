@@ -67,27 +67,38 @@ ol{
   }
 }
 
-@include mq-max(sm){
-  h1{
+h1{
     font-size: map-get($sizes, "medium");
-  }
-  h2{
-    font-size: map-get($sizes, "half");
-  }
-  h3{
-    font-size: map-get($sizes, "thumb");
-  }
-  h4{
-    font-size: map-get($sizes, "base");
-  }
-  h5{
-    font-size: map-get($sizes, "small");
-  }
-  h6{
-    font-size: map-get($sizes, "tiny");
-  }
+}
+h2{
+  font-size: map-get($sizes, "half");
+}
+h3{
+  font-size: map-get($sizes, "thumb");
+}
+h4{
+  font-size: map-get($sizes, "base");
+}
+h5{
+  font-size: map-get($sizes, "small");
+}
+h6{
+  font-size: map-get($sizes, "tiny");
 }
 
+.main-container {
+  .region-content {
+    section {
+      padding-top: 20px;
+      .block-title {
+        font-weight: 600;
+        font-size: map-get($sizes, "half");
+        margin: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
 .social-network {
   display: inline-block;
 }
@@ -159,4 +170,17 @@ ol{
     text-align: center;
     margin: 20px 0;
   }
+}
+
+
+@include mq-min(sm) {
+  
+}
+@include mq-min(md) {
+}
+@include mq-min(lg) {
+  
+}
+@include mq-min(xl) {
+  
 }
