@@ -16,6 +16,9 @@ function villadigital_theme_suggestions_block_alter(array &$suggestions, array $
     if($region == 'footer_top') {
       $suggestions[] = 'block__footer';
     }
+    elseif($region == 'content') {
+      $suggestions[] = 'block__content';
+    }
   }
   
   return $suggestions;
