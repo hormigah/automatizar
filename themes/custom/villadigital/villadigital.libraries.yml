@@ -2,12 +2,25 @@ framework:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/villadigital.js: {}
 
 fonts:
   css:
     theme:
       '//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap': { type: external, minified: true }
       vendor/font-awesome/css/font-awesome.min.css: {}
+slick:
+  css:
+    layout:
+      '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css': { type: external, minified: true }
+    theme:    
+      '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css': { type: external, minified: true }
+  js:
+    '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js': { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
       
 # Uncomment for LESS source JavaScript files.
 #  js:
