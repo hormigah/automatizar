@@ -8,13 +8,13 @@
 
   Drupal.behaviors.VillaDigitalTheme = {
     attach: function (context) {
-      $(".slick-4items .views-rows-wrapper", context).once('slider-4items').each(function () {
+      $(".slick-brands .views-rows-wrapper", context).once('slider-4items').each(function () {
         $(this).slick({
           dots: true,
           arrows: false,
           infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 6,
+          slidesToScroll: 6,
           responsive: [
             {
               breakpoint: 768,
