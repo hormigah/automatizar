@@ -27,5 +27,6 @@ regions:
 
 libraries-extend:
   bootstrap/framework:
+    - villadigital/slick
     - villadigital/framework
     - villadigital/fonts
