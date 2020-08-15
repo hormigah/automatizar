@@ -93,18 +93,18 @@ h6{
       .block-title {
         font-weight: 600;
         font-size: map-get($sizes, "half");
-        margin: 15px;
+        margin: 15px 15px 5px;
         text-align: center;
       }
       .seperater {
         position: relative;
-        margin-top: 15px !important;
+        margin: 0 auto map-get($sizes, "tiny");
         width: 60px;
         &:before, &:after {
           position: absolute;
           content: '';
           height: 2px;
-          background-color: #222;
+          background-color: color(background, color-5);
         }
         &:before {          
           left: 0px;
