@@ -98,7 +98,7 @@ h6{
       }
       .seperater {
         position: relative;
-        margin: 0 auto map-get($sizes, "tiny");
+        margin: 0 auto map-get($sizes, "half");
         width: 60px;
         &:before, &:after {
           position: absolute;
@@ -141,6 +141,27 @@ h6{
   .field-address {
     &:before {
       content: "\f041";
+    }
+  }
+}
+.slick-brands {
+  .brand-gruop {
+    padding: 15px
+  }
+}
+#block-views-block-brands-block-1 {
+  .view-header {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: map-get($sizes, "tiny");
+  }
+  .views-row {
+    text-align: center;
+    .views-field-field-image {
+      img {
+        display: inline-block;
+      }
     }
   }
 }

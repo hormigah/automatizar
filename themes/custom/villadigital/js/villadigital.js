@@ -10,9 +10,10 @@
     attach: function (context) {
       $(".slick-brands .views-rows-wrapper", context).once('slider-4items').each(function () {
         $(this).slick({
-          dots: true,
+          dots: false,
           arrows: false,
           infinite: true,
+          autoplay: true,
           slidesToShow: 6,
           slidesToScroll: 6,
           responsive: [
