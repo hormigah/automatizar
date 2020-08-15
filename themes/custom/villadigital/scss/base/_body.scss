@@ -93,7 +93,7 @@ h6{
       .block-title {
         font-weight: 600;
         font-size: map-get($sizes, "half");
-        margin: 15px 15px 5px;
+        margin: 15px 15px 10px;
         text-align: center;
       }
       .seperater {
@@ -149,13 +149,36 @@ h6{
     padding: 15px
   }
 }
-#block-views-block-brands-block-1 {
+.view {
   .view-header {
     width: 70%;
     text-align: center;
     margin: auto;
-    font-size: map-get($sizes, "tiny");
+    p {
+      font-size: map-get($sizes, "tiny");
+      color: color(text, color-5);
+    }
   }
+}
+.view-product-cageries {
+  .product-type {
+    border: 1px solid color(border, color-3);
+    border-radius: 4px;
+    margin: 0 10px;
+    .views-field-name {
+      a {
+        color: color(text, color-1);
+      }
+    }
+    .views-field-description {
+      p {
+        color: color(text, color-5);
+        font-size: map-get($sizes, "base");
+      }
+    }
+  }
+}
+#block-views-block-brands-block-1 {
   .views-row {
     text-align: center;
     .views-field-field-image {
