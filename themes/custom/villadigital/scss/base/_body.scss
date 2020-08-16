@@ -162,18 +162,26 @@ h6{
 }
 .view-product-cageries {
   .product-type {
-    border: 1px solid color(border, color-3);
+    border: 1px solid color(border, color-4);
     border-radius: 4px;
     margin: 0 10px;
-    .views-field-name {
-      a {
-        color: color(text, color-1);
+    .views-field-field-image {
+      img {
+        border-radius: 4px 4px 0 0;
       }
     }
-    .views-field-description {
-      p {
-        color: color(text, color-5);
-        font-size: map-get($sizes, "base");
+    .fields-text {
+      padding: map-get($sizes, "base");
+      .views-field-name {
+        a {
+          color: color(text, color-1);
+        }
+      }
+      .views-field-description {
+        p {
+          color: color(text, color-5);
+          font-size: map-get($sizes, "base");
+        }
       }
     }
   }
