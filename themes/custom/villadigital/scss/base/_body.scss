@@ -212,6 +212,12 @@ h6{
     }
   }
 }
+.view-id-brands.view-display-id-block_1 {
+  .view-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .view-industry {
   .industry {
     position: relative;
@@ -337,12 +343,6 @@ h6{
   }
 }
 #block-views-block-brands-block-1 {
-  .view-brands view-id-brands.view-display-id-block_1 {
-    .view-content {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
   .views-row {
     text-align: center;
     .views-field-field-image {
