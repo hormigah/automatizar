@@ -381,33 +381,79 @@ h6 {
 /* line 201, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .view-services .service .views-field-title {
   font-weight: 600;
-  height: 40px;
   font-size: 1rem;
   margin-top: 1rem;
 }
 
-/* line 206, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 205, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .view-services .service .views-field-title a {
   color: #000000;
 }
 
-/* line 210, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 209, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .view-services .service .views-field-body {
   color: #999999;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
-/* line 217, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 216, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.view-industry .views-field-field-image {
+  border-radius: 4px;
+}
+
+/* line 219, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.view-industry .views-field-title {
+  position: absolute;
+  bottom: -25px;
+  width: calc(100% - 20%);
+  left: 10%;
+  z-index: 1;
+}
+
+/* line 225, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.view-industry .views-field-title .field-content {
+  background-color: #0062A3;
+  margin-top: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 12px 50px 12px 30px;
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* line 234, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.view-industry .views-field-title .field-content a {
+  color: #ffffff;
+}
+
+/* line 238, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.view-industry .views-field-title:after {
+  content: "\f105";
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  right: 6px;
+  color: #000;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-family: FontAwesome;
+}
+
+/* line 255, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-views-block-brands-block-1 .views-row {
   text-align: center;
 }
 
-/* line 220, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 258, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-views-block-brands-block-1 .views-row .views-field-field-image img {
   display: inline-block;
 }
 
-/* line 226, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 264, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight {
   padding: 0 !important;
   width: 100vw;
@@ -415,7 +461,7 @@ h6 {
   transform: translateX(-50vw);
 }
 
-/* line 231, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 269, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .fields-text {
   position: relative;
   color: #ffffff;
@@ -424,7 +470,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-/* line 237, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 275, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .fields-text .field--name-field-body {
   position: absolute;
   margin-top: 20%;
@@ -436,27 +482,27 @@ h6 {
   width: 50%;
 }
 
-/* line 249, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 287, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .fields-text .hl-links {
   margin-top: 20px;
 }
 
-/* line 251, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 289, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .fields-text .hl-links .btn {
   font-size: 1.25rem;
 }
 
-/* line 257, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 295, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 #block-highlight .field--name-field-image img {
   width: 100%;
 }
 
-/* line 263, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 301, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .path-frontpage .page-header {
   display: none;
 }
 
-/* line 268, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 306, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .path-node .field--name-field-cover {
   padding: 0 !important;
   width: 100vw;
@@ -464,14 +510,30 @@ h6 {
   transform: translateX(-50vw);
 }
 
-/* line 274, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+/* line 312, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .path-node .field--name-node-title {
   text-align: center;
   margin: 20px 0;
 }
 
+/* line 317, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.img-effect-zoom {
+  overflow: hidden;
+}
+
+/* line 319, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.img-effect-zoom img {
+  transition: all .8s;
+  box-shadow: 0 0 0 transparent;
+}
+
+/* line 324, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+.img-effect-zoom:hover img {
+  transform: scale(1.2);
+}
+
 @media (min-width: 720px) {
-  /* line 288, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  /* line 338, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .main-container .region-content section .block-title {
     font-size: 3rem;
   }

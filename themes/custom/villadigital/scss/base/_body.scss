@@ -200,7 +200,6 @@ h6{
     box-shadow: 5px 5px 20px 0 rgba(0,0,0,.05);
     .views-field-title {
       font-weight: 600;
-      height: 40px;
       font-size: map-get($sizes, "base");
       margin-top: map-get($sizes, "base");
       a {
@@ -209,7 +208,46 @@ h6{
     }
     .views-field-body {
       color: color(text, color-5);
+      font-size: map-get($sizes, "small");
+    }
+  }
+}
+.view-industry {
+  .views-field-field-image {
+    border-radius: 4px;
+  }
+  .views-field-title {
+    position: absolute;
+    bottom: -25px;
+    width: calc(100% - 20%);
+    left: 10%;
+    z-index: 1;
+    .field-content {
+      background-color: color(background, color-2);
+      margin-top: 0;
+      border-radius: 4px;
       font-size: map-get($sizes, "base");
+      padding: 12px 50px 12px 30px;
+      position: relative;
+      font-weight: 500;
+      margin-bottom: 0;
+      a {
+        color: color(text, color-4);
+      }
+    }
+    &:after {
+      content: "\f105";
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      position: absolute;
+      right: 6px;
+      color: #000;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 40px;
+      font-family: FontAwesome;
     }
   }
 }
@@ -274,6 +312,18 @@ h6{
   .field--name-node-title {
     text-align: center;
     margin: 20px 0;
+  }
+}
+.img-effect-zoom {
+  overflow: hidden;
+  img {
+    transition: all .8s;
+    box-shadow: 0 0 0 transparent;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
   }
 }
 
