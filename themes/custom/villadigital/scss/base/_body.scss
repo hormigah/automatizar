@@ -201,6 +201,7 @@ h6{
     .views-field-title {
       font-weight: 600;
       height: 40px;
+      font-size: map-get($sizes, "base");
       a {
         color: color(text, color-1);
       }
