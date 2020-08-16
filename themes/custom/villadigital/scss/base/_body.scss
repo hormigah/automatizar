@@ -294,11 +294,13 @@ h6{
     .field--name-body {
       margin-top: 30%;
       font-size: map-get($sizes, "thumb");
+      position: absolute;
     }
   }
   .bs-region--right {
     .field--name-field-statistics {
       margin-top: 10%;
+      position: absolute;
     }
   }
   .bs-region--bottom {
