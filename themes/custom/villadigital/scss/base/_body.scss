@@ -169,7 +169,6 @@ h6{
   .product-type {
     border: 1px solid color(border, color-4);
     border-radius: 4px;
-    margin: 0 10px;
     .views-field-field-image {
       img {
         border-radius: 4px 4px 0 0;
@@ -189,6 +188,23 @@ h6{
           font-size: map-get($sizes, "base");
         }
       }
+    }
+  }
+}
+.view-services {
+  .service {
+    padding: 50px 30px;
+    background: #fff;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,.05);
+    .views-field-title {
+      a {
+        color: color(text, color-1);
+      }
+    }
+    .views-field-body {
+      color: color(text, color-5);
+      font-size: map-get($sizes, "base");
     }
   }
 }
