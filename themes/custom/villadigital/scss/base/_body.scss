@@ -157,7 +157,12 @@ h6{
     p {
       font-size: map-get($sizes, "tiny");
       color: color(text, color-5);
+      margin-bottom: 15px;
     }
+  }
+  .more-link {
+    text-align: center;
+    margin-top: map-get($sizes, "tiny");
   }
 }
 .view-product-cageries {
@@ -173,6 +178,7 @@ h6{
     .fields-text {
       padding: map-get($sizes, "base");
       .views-field-name {
+        height: 38px;
         a {
           color: color(text, color-1);
         }

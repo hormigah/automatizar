@@ -37,3 +37,14 @@ function villadigital_preprocess_block(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_views_view()
+ * @param array $vars
+ */
+function THEMENAME_preprocess_views_view(&$variables){
+  $view = $variables['view'];
+  if($view->name == 'product_cageries') {
+    $vars['more']['#options']['attributes']['class'][] = 'btn btn-primary';
+  }
+}
