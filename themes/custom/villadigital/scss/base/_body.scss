@@ -267,6 +267,7 @@ h6{
       transition: all .8s;
       margin: 0 10px;
       text-align: center;
+      overflow: hidden;
       .field--name-field-image {
         border-bottom: 2px solid color(border, color-7);
         padding-bottom: 15px;
@@ -284,6 +285,28 @@ h6{
         text-transform: uppercase;
         font-weight: 500;
       }
+      &:after {
+        content: '';
+        height: 0;
+        width: 100%;
+        background-color: color(background, color-7);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transform-origin: top;
+        transition: all .8s;
+      }
+      &:hover {
+        border-color: color(border, color-7);
+        transform: translateY(-15px);
+        &:after {
+          height: 100%;
+          top: auto;
+          bottom: 0;
+          transform-origin: bottom;
+        }
+      }
     }
   }
   .bs-region--left, .bs-region--right {
@@ -293,13 +316,13 @@ h6{
   .bs-region--left {
     .field--name-body {
       margin-top: 30%;
-      font-size: map-get($sizes, "thumb");
+      font-size: map-get($sizes, "medium");
       position: absolute;
     }
   }
   .bs-region--right {
     .field--name-field-statistics {
-      margin-top: 10%;
+      margin-top: 5%;
       position: absolute;
     }
   }
