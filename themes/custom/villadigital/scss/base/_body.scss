@@ -254,6 +254,63 @@ h6{
     }
   }
 }
+.block-content--type-statistics {
+  color: color(text, color-4);
+  .field--items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .paragraph--type--statistic {
+      padding: 40px 20px;
+      border-radius: 10px;
+      border: 1px solid color(border, color-3);
+      transition: all .8s;
+      margin: 0 10px;
+      text-align: center;
+      .field--name-field-image {
+        border-bottom: 2px solid color(border, color-7);
+        padding-bottom: 15px;
+        margin: auto 30px;
+      }
+      .field--name-field-number {
+        font-size: map-get($sizes, "xlarge");
+        line-height: 50px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-top: 10px;
+      }
+      .field--name-field-name {
+        font-size: map-get($sizes, "base");
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+  .bs-region--left, .bs-region--right {
+    position: relative;
+    z-index: 1;
+  }
+  .bs-region--left {
+    .field--name-body {
+      margin-top: 30%;
+      font-size: map-get($sizes, "thumb");
+    }
+  }
+  .bs-region--right {
+    .field--name-field-statistics {
+      margin-top: 10%;
+    }
+  }
+  .bs-region--bottom {
+    padding: 0 !important;
+    width: 100vw;
+    margin-left: 50% !important;
+    transform: translateX(-50vw);
+    img {
+      width: 100%;
+    }
+  }
+}
 #block-views-block-brands-block-1 {
   .views-row {
     text-align: center;
