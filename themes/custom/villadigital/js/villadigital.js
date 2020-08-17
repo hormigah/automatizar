@@ -28,7 +28,7 @@
         });
       });
       
-      $(".slick-clients .views-rows-wrapper", context).once('slider-clients').each(function () {
+      $(".slick-clients .view-content", context).once('slider-clients').each(function () {
         $(this).slick({
           dots: false,
           arrows: false,
