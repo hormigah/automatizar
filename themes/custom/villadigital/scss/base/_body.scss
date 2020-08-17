@@ -12,6 +12,7 @@ body {
   font-size: $font-size;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  background-color: color(background, color-5);
 }
 
 p {
@@ -262,6 +263,7 @@ h6{
 }
 .view-products {
   .product {
+    background-color: color(background, color-1);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
@@ -284,7 +286,7 @@ h6{
         justify-content: space-between;
         align-items: center;
         .commerce-order-item-add-to-cart-form {
-          
+          margin: 0;
         }
       }
     }
