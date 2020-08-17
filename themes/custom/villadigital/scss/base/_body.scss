@@ -269,13 +269,13 @@ h6{
     .paragraph--type--statistic {
       padding: 40px 20px;
       border-radius: 10px;
-      border: 1px solid color(border, color-3);
+      border: 1px solid color(border, color-1);
       transition: all .8s;
       margin: 0 10px;
       text-align: center;
       overflow: hidden;
       .field--name-field-image {
-        border-bottom: 2px solid color(border, color-7);
+        border-bottom: 2px solid color(border, color-1);
         padding-bottom: 15px;
         margin: auto 30px;
       }
@@ -295,7 +295,7 @@ h6{
         content: '';
         height: 0;
         width: 100%;
-        background-color: color(background, color-7);
+        background-color: color(background, color-2);
         position: absolute;
         top: 0;
         right: 0;
@@ -304,8 +304,11 @@ h6{
         transition: all .8s;
       }
       &:hover {
-        border-color: color(border, color-7);
+        border-color: color(border, color-1);
         transform: translateY(-15px);
+        .field--name-field-image {
+          border-color: color(border, color-5);
+        }
         &:after {
           height: 100%;
           top: auto;
