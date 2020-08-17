@@ -168,6 +168,7 @@ h6{
 }
 .view-product-cageries {
   .product-type {
+    background-color: color(background, color-1);
     border: 1px solid color(border, color-4);
     border-radius: 4px;
     .views-field-field-image {
@@ -274,6 +275,9 @@ h6{
         border-bottom: 1px solid rgba(0,0,0,0.1);
         padding-bottom: 10px;
         margin-bottom: 10px;
+        font-size: map-get($sizes, "tiny");
+        font-weight: 500;
+        text-transform: uppercase;
       }
       .views-field-title {
         a {
