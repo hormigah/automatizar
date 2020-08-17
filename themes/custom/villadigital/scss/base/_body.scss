@@ -279,6 +279,14 @@ h6{
           font-size: map-get($sizes, "thumb");
         }
       }
+      .fields-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .commerce-order-item-add-to-cart-form {
+          
+        }
+      }
     }
   }
 }
