@@ -18,14 +18,25 @@
         color: color(text, color-4);
         font-weight: 500;
         padding: 15px 0;
+        transition: all .8s;
         &.active-trail {
           color: color(text, color-4);
           background-color: transparent;
         }
         &:hover {
-          background-color: transparent;
-          color: color(text, color-4);
+          background-color: transparent !important;
+          color: color(text, color-4) !important;
         }
+      }
+      &:after {
+        content: "";
+        height: 5px;
+        background: color(background, color-8);
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        right: -1px;
+        transition: all .8s;
       }
       &.active-trail {
         &:after {
@@ -35,7 +46,18 @@
           width: calc(100% + 2px);
           position: absolute;
           bottom: 0;
-          left: -1px;
+          left: -1px; 
+        }
+      }
+      &:hover {
+        a {
+        }
+        &:after {
+          content: "";
+          transform-origin: right;
+          right: auto;
+          left: 0;
+          width: 100%;
         }
       }
     }
