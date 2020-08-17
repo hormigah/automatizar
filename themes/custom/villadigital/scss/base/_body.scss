@@ -260,6 +260,13 @@ h6{
     }
   }
 }
+.view-products {
+  .product{
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  }
+}
 .block-content--type-statistics {
   color: color(text, color-4);
   .field--items {
