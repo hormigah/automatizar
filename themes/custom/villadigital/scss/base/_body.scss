@@ -179,8 +179,9 @@ h6{
     .fields-text {
       padding: map-get($sizes, "base");
       .views-field-name {
-        height: 40px;
+        height: 50px;
         font-weight: 600;
+        border-bottom: 1px solid rgba(0,0,0,.1);
         a {
           color: color(text, color-1);
         }
@@ -191,7 +192,17 @@ h6{
           font-size: map-get($sizes, "base");
         }
       }
+      .views-field-view-taxonomy-term {
+        margin-top: 10px;
+        background-color: color(background, color-9);
+        a {
+          color: color(text, color-4);
+        }
+      }
     }
+  }
+  .more-link {
+    margin-top: map-get($sizes, "base");
   }
 }
 .view-services {
