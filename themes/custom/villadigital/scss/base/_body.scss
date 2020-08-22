@@ -204,6 +204,7 @@ h6{
       font-weight: 600;
       font-size: map-get($sizes, "base");
       margin-top: map-get($sizes, "base");
+      height: 40px;
       a {
         color: color(text, color-1);
       }
@@ -211,6 +212,7 @@ h6{
     .views-field-body {
       color: color(text, color-5);
       font-size: map-get($sizes, "small");
+      height: 110px;
     }
   }
 }
@@ -223,6 +225,7 @@ h6{
 .view-industry {
   .industry {
     position: relative;
+    margin-bottom: map-get($sizes, "large");
     .views-field-field-image {
       border-radius: 4px;
     }
