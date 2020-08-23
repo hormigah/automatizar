@@ -443,8 +443,8 @@ h6 {
   background-color: #0062A3;
   margin-top: 0;
   border-radius: 4px;
-  font-size: 0.875rem;
-  padding: 12px 50px 12px 30px;
+  font-size: 0.75rem;
+  padding: 10px 50px 10px 10px;
   position: relative;
   font-weight: 500;
   margin-bottom: 0;
@@ -458,8 +458,8 @@ h6 {
 /* line 261, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
 .view-industry .industry .views-field-title:after {
   content: "\f105";
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   position: absolute;
   right: 6px;
@@ -467,7 +467,7 @@ h6 {
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  line-height: 40px;
+  line-height: 20px;
   font-family: FontAwesome;
 }
 
@@ -788,6 +788,17 @@ h6 {
   /* line 550, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .main-container .region-content section .block-title {
     font-size: 3rem;
+  }
+  /* line 559, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  .view-industry .industry .views-field-title .field-content {
+    padding: 12px 50px 12px 30px;
+    font-size: 0.875rem;
+  }
+  /* line 563, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  .view-industry .industry .views-field-title:after {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
