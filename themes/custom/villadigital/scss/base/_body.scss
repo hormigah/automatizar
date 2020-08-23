@@ -242,8 +242,8 @@ h6{
     .views-field-title {
       position: absolute;
       bottom: -25px;
-      width: calc(100% - 20%);
-      left: 10%;
+      width: calc(100% - 12%);
+      left: 6%;
       z-index: 1;
       .field-content {
         background-color: color(background, color-2);
@@ -556,6 +556,8 @@ h6{
   .view-industry {
     .industry {
       .views-field-title {
+      width: calc(100% - 20%);
+      left: 10%;
         .field-content {
           padding: 12px 50px 12px 30px;
           font-size: map-get($sizes, "small");
