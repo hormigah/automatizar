@@ -324,6 +324,19 @@ h6{
         color: color(text, color-9);
         font-weight: 600;
         font-size: map-get($sizes, "tiny");
+        transition: all .8s linear;
+        &:hover {
+          background: color(background, color-9);
+          color: color(text, color-4);
+        }
+      }
+    }
+    .row-active {
+      .views-field-name {
+        a {
+          background: color(background, color-9);
+          color: color(text, color-4);
+        }
       }
     }
   }
