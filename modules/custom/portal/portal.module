@@ -1,8 +1,29 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+use \Drupal\views\ViewExecutable;
+use Drupal\views\ResultRow;
 
+/**
+ * Implements hook_views_pre_render()
+ * @param \Drupal\views\ViewExecutable $view
+ */
+function portal_preprocess_views_view_unformatted($variables) {
+  $view = $variables['view'];
+  
+  if ($view->id() == 'products_categories_link') {
+    if ($term = \Drupal::routeMatch()->getParameter('taxonomy_term')) {
+      $tid = $term->id();
+      $variables['all_class'] = '';
+    }
+    else {
+      $tid = 0;
+      $variables['all_class'] = 'row-active';
+    }
+    $rows = &$variables['rows'];
+    foreach ($rows as $row) {
+      if($row['content']['#row']->_entity->id() == $tid) {
+        $row['attributes']->addClass('row-active');
+      }
+    }
+  }
+}
