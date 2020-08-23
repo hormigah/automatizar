@@ -7,17 +7,17 @@ use Drupal\views\ResultRow;
  * Implements hook_views_pre_render()
  * @param \Drupal\views\ViewExecutable $view
  */
-function portal_preprocess_views_view_unformatted($variables) {
+function portal_preprocess_views_view_unformatted(&$variables) {
   $view = $variables['view'];
   
   if ($view->id() == 'products_categories_link') {
     if ($term = \Drupal::routeMatch()->getParameter('taxonomy_term')) {
       $tid = $term->id();
-      $variables['all_class'] = '';
+      $variables['allclass'] = '';
     }
     else {
       $tid = 0;
-      $variables['all_class'] = 'row-active';
+      $variables['allclass'] = 'row-active';
     }
     $rows = &$variables['rows'];
     foreach ($rows as $row) {
