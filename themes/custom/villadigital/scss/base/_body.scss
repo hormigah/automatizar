@@ -341,9 +341,6 @@ h6{
 .block-content--type-statistics {
   color: color(text, color-4);
   .field--items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .paragraph--type--statistic {
       padding: 40px 20px;
       border-radius: 10px;
@@ -579,6 +576,13 @@ h6{
           line-height: 40px;
         }
       }
+    }
+  }
+  .block-content--type-statistics {
+    .field--items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }
