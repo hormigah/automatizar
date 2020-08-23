@@ -90,7 +90,6 @@ h6{
 .main-container {
   .region-content {
     section {
-      padding-top: 20px;
       .block-title {
         font-weight: 600;
         font-size: map-get($sizes, "half");
@@ -475,6 +474,13 @@ h6{
 .path-frontpage {
   .page-header {
     display: none;
+  }
+  .main-container {
+    .region-content {
+      section {
+        padding-top: 20px;
+      }
+    }
   }
 }
 .path-node {
