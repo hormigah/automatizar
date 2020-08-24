@@ -1742,7 +1742,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   .header .navbar-nav li {
     border: 1px solid #dfdfdf;
     border-width: 0 0 0 1px;
-    padding: 10px 15px 10px 15px;
+    padding: 5px 15px;
     margin: 0;
   }
   /* line 284, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
@@ -1800,7 +1800,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
     position: relative;
     width: 20%;
     float: right;
-    padding: 20px 0 16px 0;
+    padding: 12px 0 10px 0;
     z-index: 9;
     display: flex;
   }
@@ -1821,7 +1821,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 @media (min-width: 960px) {
   /* line 348, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_header.scss */
   .header .middle-area .region-header-top {
-    padding: 15px 0 5px;
+    padding: 15px 0 2px;
     width: 200px;
     max-width: 200px;
   }
