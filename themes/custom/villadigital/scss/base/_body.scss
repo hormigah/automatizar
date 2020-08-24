@@ -124,6 +124,7 @@ h6{
   display: inline-block;
 }
 .commerce-cart-block--type-button {
+  position: relative;
   .commerce-cart-block--summary__icon {
     font-size: map-get($sizes, "medium");
     color: color(text, color-3);
