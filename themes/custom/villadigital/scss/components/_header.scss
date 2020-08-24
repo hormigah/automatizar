@@ -328,6 +328,9 @@
           padding: 20px 0 16px 0;
           z-index: 9;
           display: flex;
+          .block {
+            margin: 0 10px;
+          }
           .social-network {
             margin: 0 5px;
             a {
