@@ -376,7 +376,10 @@ h6{
       .field--name-field-image {
         border-bottom: 2px solid color(border, color-1);
         padding-bottom: 15px;
-        margin: auto 30px;
+        
+        img {
+          margin: auto;
+        }
       }
       .field--name-field-number {
         font-size: map-get($sizes, "xlarge");
