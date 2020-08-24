@@ -558,6 +558,7 @@ h6{
         font-size: map-get($sizes, "small");
         height: 120px;        
         color: color(text, color-5);
+        display: block;
       }
     }
   }

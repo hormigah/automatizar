@@ -793,24 +793,25 @@ h6 {
     font-size: 0.875rem;
     height: 120px;
     color: #999999;
+    display: block;
   }
-  /* line 566, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  /* line 567, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .view-industry .industry .views-field-title {
     width: calc(100% - 20%);
     left: 10%;
   }
-  /* line 569, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  /* line 570, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .view-industry .industry .views-field-title .field-content {
     padding: 12px 50px 12px 30px;
     font-size: 0.875rem;
   }
-  /* line 573, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  /* line 574, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .view-industry .industry .views-field-title:after {
     width: 40px;
     height: 40px;
     line-height: 40px;
   }
-  /* line 582, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
+  /* line 583, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_body.scss */
   .block-content--type-statistics .field--items {
     display: flex;
     justify-content: space-between;
