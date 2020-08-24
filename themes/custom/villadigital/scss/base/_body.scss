@@ -123,6 +123,29 @@ h6{
 .social-network {
   display: inline-block;
 }
+.commerce-cart-block--type-button {
+  .commerce-cart-block--summary__icon {
+    font-size: map-get($sizes, "medium");
+    color: color(text, color-3);
+    line-height: 1;
+  }
+  .commerce-cart-block--summary__label {
+    font-size: map-get($sizes, "tiny");
+    height: 15px;
+    line-height: 15px;
+    min-width: 15px;
+    padding: 0;
+    position: absolute;
+    right: -7px;
+    text-align: center;
+    top: -5px;
+    border-radius: 10px;
+    color: color(text, color-4);
+    background-color: color(background, color-9);
+    font-weight: 500;
+  }
+}
+
 .view-company-contact-information {
   .views-field {
     &:before {
