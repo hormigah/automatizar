@@ -447,6 +447,38 @@ h6{
     }
   }
 }
+#block-automatizamostuplantadeproduccion {
+  .bs-region--main {
+    display: flex;
+    align-items: center;
+    .fields {
+      margin-right: map-get($sizes, "half");
+      .field--name-block-description {
+        margin-bottom: map-get($sizes, "half");
+        h2 {
+          font-size: map-get($sizes, "medium");
+          font-weight: 600;
+          line-height: 45px;
+        }
+      } 
+    }
+    .field--name-field-image {
+      position: relative;
+      margin: map-get($sizes, "half");
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border: 10px solid color(border, color-1);
+        z-index: -1;
+        transition: all .8s;
+      }
+    }
+  }
+}
 #block-views-block-brands-block-1 {
   .views-row {
     text-align: center;
