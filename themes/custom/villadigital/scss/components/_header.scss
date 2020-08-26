@@ -329,12 +329,15 @@
           z-index: 9;
           display: flex;
           .block {
-            margin: 0 10px;
+            margin: 0 15px;
           }
           .social-network {
             margin: 0 5px;
             a {
               color: color(text, color-3);
+            }
+            &:last-child {
+              margin: 0;
             }
           }
         }
