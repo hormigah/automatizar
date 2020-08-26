@@ -447,6 +447,12 @@ h6{
     }
   }
 }
+#block-usericon {
+  font-size: map-get($sizes, "half");
+  a {
+    color: color(text, color-3);
+  }
+}
 #block-automatizamostuplantadeproduccion {
   .bs-region--main {
     display: flex;
