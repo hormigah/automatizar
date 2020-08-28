@@ -8,6 +8,23 @@
 
   Drupal.behaviors.VillaDigitalTheme = {
     attach: function (context) {
+      $("a[href*='#']", context).once('link-animator').each(function () {
+        $(this).click(function(event) {
+          if (this.hash !== ""  &&  $(this.hash).length) {
+            event.preventDefault();
+            var hash = this.hash;
+            var offset = 0;
+            console.log(offset);
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - offset
+            }, 800, function(){
+      //              window.location.hash = hash;
+            });
+          }
+
+        });
+      });
+      
       $(".slick-brands .views-rows-wrapper", context).once('slider-brands').each(function () {
         $(this).slick({
           dots: false,
