@@ -254,6 +254,11 @@ h6{
     justify-content: space-around;
   }
 }
+.view-clients {
+  .views-field.views-field-field-image {
+    margin: map-get($sizes, "tiny");
+  }
+}
 .view-industry {
   .industry {
     position: relative;
