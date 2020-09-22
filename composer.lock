@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41fcf29397cc98f1bc28dc8ce5d43e98",
+    "content-hash": "8a03c0999ce6142367f4b73d965b5d4a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -904,6 +904,11 @@
         {
             "name": "drupal/core",
             "version": "8.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "caf4e756d31dfb0c2e52cd0748e900efe4b57766"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/caf4e756d31dfb0c2e52cd0748e900efe4b57766",
@@ -1131,16 +1136,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "caf4e756d31dfb0c2e52cd0748e900efe4b57766"
-            }
+            "description": "Drupal is an open source content management platform powering millions of websites and applications."
         },
         {
             "name": "drupal/core-composer-scaffold",
             "version": "8.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c902d07cb49ef73777e2b33a39e54c2861a8c81d",
@@ -1176,16 +1181,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d"
-            }
+            ]
         },
         {
             "name": "drupal/core-project-message",
             "version": "8.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "3f8fa28128f1fef68ee0e6647011a543ef92be5b"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-project-message/zipball/3f8fa28128f1fef68ee0e6647011a543ef92be5b",
@@ -1217,6 +1222,11 @@
         {
             "name": "drupal/core-recommended",
             "version": "8.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "6c5c4739afc5549e6089ef34b59c712c8872f154"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recommended/zipball/6c5c4739afc5549e6089ef34b59c712c8872f154",
@@ -1326,6 +1336,85 @@
                 "drupal"
             ],
             "time": "2020-06-29T11:56:20+00:00"
+        },
+        {
+            "name": "drupal/draggableviews",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/draggableviews.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/draggableviews-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "3796f0e478c8119dcd10e1d114c5fcf4492b8a1c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/draggableviews_demo": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1592329896",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler Struyk (iStryker)",
+                    "homepage": "https://www.drupal.org/u/istryker",
+                    "email": "tyler.struyk@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Andrii Podanenko (podarok)",
+                    "homepage": "https://www.drupal.org/u/podarok",
+                    "email": "podarokua@gmail.com",
+                    "role": "Drupal 7 to 8 Porter"
+                },
+                {
+                    "name": "Yuriy Gerasimov (ygerasimov)",
+                    "homepage": "https://www.drupal.org/u/ygerasimov",
+                    "email": "yuriy.gerasimov@gmail.com",
+                    "role": "Ex Maintainer (D7)"
+                },
+                {
+                    "name": "Severin Unger (sevi)",
+                    "homepage": "https://www.drupal.org/u/sevi",
+                    "role": "Ex Maintainer (D6)"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                },
+                {
+                    "name": "sevi",
+                    "homepage": "https://www.drupal.org/user/199290"
+                },
+                {
+                    "name": "ygerasimov",
+                    "homepage": "https://www.drupal.org/user/257311"
+                }
+            ],
+            "description": "DraggableViews module makes views draggable.",
+            "homepage": "https://www.drupal.org/project/draggableviews",
+            "support": {
+                "source": "https://cgit.drupalcode.org/draggableviews",
+                "issues": "https://www.drupal.org/project/issues/draggableviews"
+            }
         },
         {
             "name": "drupal/entity",
@@ -1730,16 +1819,28 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "6c5c4739afc5549e6089ef34b59c712c8872f154"
+            "authors": [
+                {
+                    "name": "Jakub Piasecki",
+                    "homepage": "https://www.drupal.org/user/1532844",
+                    "email": "jakub@piaseccy.pl"
+                }
+            ],
+            "description": "Additional formatters to Telephone field.",
+            "homepage": "https://www.drupal.org/project/telephone_formatter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/telephone_formatter",
+                "issues": "http://drupal.org/project/issues/telephone_formatter"
             }
         },
         {
-            "name": "drupal/core-vendor-hardening",
-            "version": "8.9.6",
+            "name": "drupal/token",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token.git",
+                "reference": "8.x-1.7"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.7.zip",
@@ -3596,20 +3697,6 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-08-31T05:53:42+00:00"
         },
         {
