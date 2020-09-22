@@ -545,6 +545,9 @@ h6{
   }
 }
 .page-node-type-webform {
+  .page-header {
+    display: none;
+  }
   .field--name-field-company-headquarters {
     .paragraph--type--company-headquarters  {
       background-color: rgba(255,255,255,.05);
