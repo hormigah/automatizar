@@ -1,5 +1,5 @@
 
-*, 
+*,
 *:before, *:after {
 	box-sizing: border-box;
 }
@@ -106,7 +106,7 @@ h6{
           height: 2px;
           background-color: color(background, color-5);
         }
-        &:before {          
+        &:before {
           left: 0px;
           top: 0px;
           width: 60px;
@@ -381,7 +381,7 @@ h6{
       .field--name-field-image {
         border-bottom: 2px solid color(border, color-1);
         padding-bottom: 15px;
-        
+
         img {
           margin: auto;
         }
@@ -471,7 +471,7 @@ h6{
           font-weight: 600;
           line-height: 45px;
         }
-      } 
+      }
     }
     .field--name-field-image {
       position: relative;
@@ -520,8 +520,6 @@ h6{
       flex: 1;
       font-size: map-get($sizes, "half");
       width: 50%;
-      p {
-      }
     }
     .hl-links {
       margin-top: 20px;
@@ -543,6 +541,31 @@ h6{
       &:first-child {
         margin-top: 0;
       }
+    }
+  }
+}
+.page-node-type-webform {
+  .field--name-field-company-headquarters {
+
+  }
+  .field--name-webform {
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    .contact-title {
+      font-size: map-get($sizes, "medium");
+      line-height: 35px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .form-item-description {
+      line-height: 28px;
+      margin-bottom: 24px;
+      color: color(text, color-6);
     }
   }
 }
@@ -574,7 +597,7 @@ h6{
   .view {
     .view-header {
       width: 100%;
-      text-align: left; 
+      text-align: left;
     }
   }
 }
@@ -588,7 +611,7 @@ h6{
     width: 100%;
     height: 100%;
     opacity: 0;
-    content: '';    
+    content: '';
     background: color(background, color-6);
     position: absolute;
     left: 0;
@@ -599,7 +622,7 @@ h6{
   &:hover {
     img {
       transform: scale(1.2);
-    } 
+    }
     &:before {
       opacity: .5;
     }
@@ -608,7 +631,7 @@ h6{
 
 
 @include mq-min(sm) {
-  
+
 }
 @include mq-min(md) {
   .main-container {
@@ -628,7 +651,7 @@ h6{
       }
       .views-field-body {
         font-size: map-get($sizes, "small");
-        height: 120px;        
+        height: 120px;
         color: color(text, color-5);
         display: block;
       }
@@ -660,8 +683,8 @@ h6{
   }
 }
 @include mq-min(lg) {
-  
+
 }
 @include mq-min(xl) {
-  
+
 }

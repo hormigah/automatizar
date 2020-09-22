@@ -42,15 +42,15 @@ $colors: (
    ),
    grayscale: (
       white    : $grayscaleWhite,
-      gray-1   : $grayscaleLevel-1, 
+      gray-1   : $grayscaleLevel-1,
       gray-2   : $grayscaleLevel-2,
       gray-3   : $grayscaleLevel-3,
       gray-4   : $grayscaleLevel-4,
       gray-5   : $grayscaleLevel-5,
       gray-6   : $grayscaleLevel-6,
-      gray-7   : $grayscaleLevel-7,  
+      gray-7   : $grayscaleLevel-7,
       base     : $grayscaleBase,
-      black    : $grayscaleBlack 
+      black    : $grayscaleBlack
    ),
    button:(
     color-1  : $buttonColor-1,
@@ -61,9 +61,10 @@ $colors: (
     color-3  : $textColor-3,
     color-4  : $textColor-4,
     color-5  : $textColor-5,
-    
-    
-    
+    color-6  : $textColor-6,
+
+
+
     color-9  : $textColor-9,
    ),
    border:(
@@ -72,9 +73,9 @@ $colors: (
     color-3  : $borderColor-3,
     color-4  : $borderColor-4,
     color-5  : $borderColor-5,
-    
+
     color-7  : $borderColor-7,
-    
+
     color-9  : $borderColor-9,
    ),
    background: (
