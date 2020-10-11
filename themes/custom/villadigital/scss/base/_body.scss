@@ -540,6 +540,12 @@ h6{
   margin-left: 50% !important;
   transform: translateX(-50vw);
   color: color(text, color-2);
+  .webform-actions {
+    .webform-button--submit {
+      background: color(background, color-9);
+      color: color(text, color-4);
+    }
+  }
 }
 .path-node {
   .bs-region--right {

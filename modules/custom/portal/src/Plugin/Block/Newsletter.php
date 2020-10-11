@@ -35,13 +35,13 @@ class Newsletter extends BlockBase {
     $build['block']['row']['left'] = [
       '#type' => 'container',
       '#attributes' => [
-        'class' => ['col-sm-5','newsletter-left'],
+        'class' => ['col-sm-7','newsletter-left'],
       ]
     ];
     $build['block']['row']['right'] = [
       '#type' => 'container',
       '#attributes' => [
-        'class' => ['col-sm-7'],
+        'class' => ['col-sm-5'],
       ]
     ];
     $build['block']['row']['left']['title'] = [
