@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\elearning\Plugin\DsField;
+namespace Drupal\portal\Plugin\DsField;
 
 use Drupal\ds\Plugin\DsField\DsFieldBase;
 use Drupal\Core\Link;
