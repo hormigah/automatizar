@@ -24,13 +24,8 @@ class ContactLink extends DsFieldBase {
    * {@inheritdoc}
    */
   public function build() {
-    $link_options = [
-      'attributes' => [
-        'class' => ['btn', 'btn-secundary'],
-      ],
-    ];
-
-    $build = Link::createFromRoute('Contacta a un asesor', 'entity.node.canonical', ['node' => 1], $link_options)->toRenderable();
+    $build['link'] = Link::createFromRoute('Contacta a un asesor', 'entity.node.canonical', ['node' => 1])->toRenderable();
+    $build['link']['#attributes']['class'] = ['btn', 'btn-secundary'];
 
     return $build;
   }
