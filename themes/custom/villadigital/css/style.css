@@ -1256,7 +1256,51 @@ h6 {
   box-shadow: none;
 }
 
-/* line 44, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
+/* line 43, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
+.btn.btn-secundary {
+  background: #cc802c;
+  color: #ffffff;
+}
+
+/* line 59, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary:hover {
+  background: #af6e26;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* line 64, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(102, 102, 102, 0.25);
+  text-decoration: none;
+}
+
+/* line 69, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary:active {
+  background: #a26623;
+}
+
+/* line 72, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary.disabled, .btn.btn-secundary:disabled {
+  opacity: .55;
+  color: #666666;
+  background: #cccccc;
+  box-shadow: none;
+  cursor: auto;
+}
+
+/* line 79, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary.disabled:hover, .btn.btn-secundary:disabled:hover {
+  background: #cccccc;
+}
+
+/* line 82, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/config/_mixins.scss */
+.btn.btn-secundary.disabled:focus, .btn.btn-secundary:disabled:focus {
+  box-shadow: none;
+}
+
+/* line 46, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_buttons.scss */
 .btn.btn-link {
   box-shadow: none;
 }
