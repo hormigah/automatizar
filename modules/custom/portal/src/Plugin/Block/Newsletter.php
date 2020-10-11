@@ -40,9 +40,9 @@ class Newsletter extends BlockBase {
     ];
     $build['row']['left']['title'] = [
       '#type' => 'markup',
-      '#markup' => Markup::create('<div class="newsletter-title">Suscribete al Newsletter</div>'),
+      '#markup' => Markup::create('<h2 class="block-title">Suscribete al Newsletter</h2>'),
     ];
-    $build['row']['left']['title'] = [
+    $build['row']['left']['description'] = [
       '#type' => 'markup',
       '#markup' => Markup::create('<div class="newsletter-description">Entérate de las nuevas tendencias en relación con las soluciones de automatización de procesos industriales en Colombia.</div>'),
     ];
