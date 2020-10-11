@@ -30,7 +30,7 @@ class ContactLink extends DsFieldBase {
       ],
     ];
 
-    $build = Link::createFromRoute('Contacta a un asesor', 'entity.node.canonical', ['node' => 1], $link_options);
+    $build = Link::createFromRoute('Contacta a un asesor', 'entity.node.canonical', ['node' => 1], $link_options)->toRenderable();
 
     return $build;
   }
