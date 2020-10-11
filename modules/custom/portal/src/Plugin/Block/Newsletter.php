@@ -29,18 +29,22 @@ class Newsletter extends BlockBase {
     $build['row']['left'] = [
       '#type' => 'container',
       '#attributes' => [
-        'class' => ['col-sm-6'],
+        'class' => ['col-sm-5','newsletter-left'],
       ]
     ];
     $build['row']['right'] = [
       '#type' => 'container',
       '#attributes' => [
-        'class' => ['col-sm-6'],
+        'class' => ['col-sm-7'],
       ]
     ];
     $build['row']['left']['title'] = [
       '#type' => 'markup',
-      '#markup' => Markup::create('Suscribete al Newsletter'),
+      '#markup' => Markup::create('<div class="newsletter-title">Suscribete al Newsletter</div>'),
+    ];
+    $build['row']['left']['title'] = [
+      '#type' => 'markup',
+      '#markup' => Markup::create('<div class="newsletter-description">Entérate de las nuevas tendencias en relación con las soluciones de automatización de procesos industriales en Colombia.</div>'),
     ];
     $build['row']['right']['webform'] = [
       '#type' => 'webform',
