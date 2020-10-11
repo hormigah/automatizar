@@ -1,0 +1,23 @@
+uuid: 1b1fc0d4-7dbf-4493-bb83-244640cb4642
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_main
+    - taxonomy.vocabulary.brand
+id: taxonomy_term.brand.field_main
+field_name: field_main
+entity_type: taxonomy_term
+bundle: brand
+label: Principal
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

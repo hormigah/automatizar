@@ -1,0 +1,30 @@
+uuid: dbbe2c29-0041-4d14-b1c8-95be94c85729
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.product_cageries
+  module:
+    - system
+    - views
+  theme:
+    - villadigital
+id: views_block__product_cageries_block_1
+theme: villadigital
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:product_cageries-block_1'
+settings:
+  id: 'views_block:product_cageries-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

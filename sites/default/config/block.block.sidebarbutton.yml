@@ -1,0 +1,20 @@
+uuid: fdfe202d-b548-4839-9fdd-8934b6bce40d
+langcode: es
+status: true
+dependencies:
+  module:
+    - portal
+  theme:
+    - villadigital
+id: sidebarbutton
+theme: villadigital
+region: header_top_right
+weight: 0
+provider: null
+plugin: sidebar_button
+settings:
+  id: sidebar_button
+  label: 'Sidebar button'
+  provider: portal
+  label_display: '0'
+visibility: {  }

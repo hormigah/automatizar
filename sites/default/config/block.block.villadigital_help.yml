@@ -1,0 +1,22 @@
+uuid: c0c052b3-dfe2-4a75-acb5-2c79bf2bd9be
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - villadigital
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: villadigital_help
+theme: villadigital
+region: help
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

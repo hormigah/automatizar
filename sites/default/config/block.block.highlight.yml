@@ -1,0 +1,31 @@
+uuid: 1f1094be-69f6-4357-a111-c4a142ac9aa6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:highlight:beecde5a-dd10-4587-8fda-7d66c1c06613'
+  module:
+    - block_content
+    - system
+  theme:
+    - villadigital
+id: highlight
+theme: villadigital
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:beecde5a-dd10-4587-8fda-7d66c1c06613'
+settings:
+  id: 'block_content:beecde5a-dd10-4587-8fda-7d66c1c06613'
+  label: Highlight
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,10 @@
+uuid: d1738e92-83e7-47b0-9b9a-6c81491e279f
+langcode: es
+status: true
+dependencies: {  }
+id: highlight
+label: Highlight
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

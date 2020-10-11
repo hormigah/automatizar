@@ -1,0 +1,17 @@
+uuid: 7e3673d3-4a6f-4595-b02b-4a521c50643c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Servicio
+type: service
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

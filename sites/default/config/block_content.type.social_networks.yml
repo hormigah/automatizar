@@ -1,0 +1,8 @@
+uuid: 3093a8d0-973e-4f73-a088-fd3a3a30a498
+langcode: es
+status: true
+dependencies: {  }
+id: social_networks
+label: 'Redes Sociales'
+revision: 0
+description: ''

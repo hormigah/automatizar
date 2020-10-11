@@ -1,0 +1,31 @@
+uuid: 6bac55b8-40b2-4ab3-9c10-065f9c5afe00
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:information:f28fd5ba-9909-4f8c-8999-f6ed33398883'
+  module:
+    - block_content
+    - system
+  theme:
+    - villadigital
+id: automatizamostuplantadeproduccion
+theme: villadigital
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:f28fd5ba-9909-4f8c-8999-f6ed33398883'
+settings:
+  id: 'block_content:f28fd5ba-9909-4f8c-8999-f6ed33398883'
+  label: 'Automatizamos tu planta de producción'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

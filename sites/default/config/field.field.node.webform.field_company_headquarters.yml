@@ -1,0 +1,31 @@
+uuid: 8d05927c-e5e5-486d-9bd6-c4c042bc4473
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_headquarters
+    - node.type.webform
+    - paragraphs.paragraphs_type.company_headquarters
+  module:
+    - entity_reference_revisions
+id: node.webform.field_company_headquarters
+field_name: field_company_headquarters
+entity_type: node
+bundle: webform
+label: 'Sedes de la Compañía'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      company_headquarters: company_headquarters
+    target_bundles_drag_drop:
+      company_headquarters:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 69b5403c-d3f4-499a-a09f-e89b61d6a336
+langcode: es
+status: true
+dependencies:
+  theme:
+    - villadigital
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: villadigital_secondary_local_tasks
+theme: villadigital
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 45062114-88f8-4b9c-b762-bcd8cb982b7d
+name: Automatizar
+mail: hormigah@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

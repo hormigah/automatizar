@@ -1,0 +1,21 @@
+uuid: 2d60f895-72dc-4700-9e93-40c5fa6829bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_phone
+    - paragraphs.paragraphs_type.company_headquarters
+  module:
+    - telephone
+id: paragraph.company_headquarters.field_phone
+field_name: field_phone
+entity_type: paragraph
+bundle: company_headquarters
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,37 @@
+uuid: fa4dd747-2733-407b-8cdb-2ce70cbcbe71
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight
+    - field.storage.block_content.field_highlights
+    - paragraphs.paragraphs_type.highlight
+  module:
+    - entity_reference_revisions
+id: block_content.highlight.field_highlights
+field_name: field_highlights
+entity_type: block_content
+bundle: highlight
+label: Highlights
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      highlight: highlight
+    target_bundles_drag_drop:
+      company_headquarters:
+        weight: 4
+        enabled: false
+      highlight:
+        enabled: true
+        weight: 5
+      social_network:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

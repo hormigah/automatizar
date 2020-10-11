@@ -1,0 +1,25 @@
+uuid: 4a9a0252-527b-4c30-9839-954c5673a753
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.social_networks
+    - field.field.block_content.social_networks.field_social_network
+  module:
+    - entity_reference_revisions
+id: block_content.social_networks.default
+targetEntityType: block_content
+bundle: social_networks
+mode: default
+content:
+  field_social_network:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

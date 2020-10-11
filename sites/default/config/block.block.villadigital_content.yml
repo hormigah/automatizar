@@ -1,0 +1,22 @@
+uuid: ffb1ee12-17b6-4a9c-9729-eb71d2ffc3a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - villadigital
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: villadigital_content
+theme: villadigital
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

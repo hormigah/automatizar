@@ -1,0 +1,11 @@
+uuid: f5ea8cf3-b3c0-4fc0-bd6d-74ed853d3743
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.social_networks
+id: block_content.social_networks
+target_entity_type_id: block_content
+target_bundle: social_networks
+default_langcode: site_default
+language_alterable: false

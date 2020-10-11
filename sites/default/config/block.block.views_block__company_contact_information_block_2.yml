@@ -1,0 +1,24 @@
+uuid: eb5e3415-541f-42dd-86bd-9a84646fa73b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.company_contact_information
+  module:
+    - views
+  theme:
+    - villadigital
+id: views_block__company_contact_information_block_2
+theme: villadigital
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:company_contact_information-block_2'
+settings:
+  id: 'views_block:company_contact_information-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

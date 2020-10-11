@@ -1,0 +1,10 @@
+uuid: 70755abf-b8e4-4723-a83e-65a914d5ba16
+langcode: es
+status: true
+dependencies: {  }
+id: company_headquarters
+label: 'Company headquarters'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

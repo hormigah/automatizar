@@ -1,0 +1,40 @@
+uuid: 6950322a-e25f-4465-9106-008ca6b81d02
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.statistics
+    - field.storage.block_content.field_statistics
+    - paragraphs.paragraphs_type.statistic
+  module:
+    - entity_reference_revisions
+id: block_content.statistics.field_statistics
+field_name: field_statistics
+entity_type: block_content
+bundle: statistics
+label: Statistics
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      statistic: statistic
+    target_bundles_drag_drop:
+      company_headquarters:
+        weight: 5
+        enabled: false
+      highlight:
+        weight: 6
+        enabled: false
+      social_network:
+        weight: 7
+        enabled: false
+      statistic:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

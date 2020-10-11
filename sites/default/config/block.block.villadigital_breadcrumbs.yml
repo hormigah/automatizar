@@ -1,0 +1,22 @@
+uuid: 2c4b5b4c-eb68-4b93-ba3e-d92fd225cb9a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - villadigital
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: villadigital_breadcrumbs
+theme: villadigital
+region: content
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,65 @@
+uuid: f7538f76-2de4-46e6-b922-11774e92aaef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlight.field_body
+    - field.field.paragraph.highlight.field_body_right
+    - field.field.paragraph.highlight.field_image
+    - field.field.paragraph.highlight.field_status
+    - paragraphs.paragraphs_type.highlight
+  module:
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_fields:
+      children:
+        - field_body
+        - field_body_right
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'fields-text container'
+      label: Fields
+id: paragraph.highlight.default
+targetEntityType: paragraph
+bundle: highlight
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_body_right:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_status: true

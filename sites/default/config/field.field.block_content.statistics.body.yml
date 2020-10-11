@@ -1,0 +1,23 @@
+uuid: 838afc26-da1d-4965-b455-7c1c5996d4e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.statistics
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.statistics.body
+field_name: body
+entity_type: block_content
+bundle: statistics
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

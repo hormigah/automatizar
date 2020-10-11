@@ -1,0 +1,17 @@
+uuid: 5533f051-ebce-4268-bb92-1b649853b808
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Industria
+type: industry
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,35 @@
+uuid: 72477a74-ea65-4f3c-9c71-9a33e9fe6955
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.industry.body
+    - field.field.node.industry.field_cover
+    - field.field.node.industry.field_image
+    - node.type.industry
+  module:
+    - text
+    - user
+id: node.industry.teaser
+targetEntityType: node
+bundle: industry
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cover: true
+  field_image: true
+  langcode: true

@@ -1,0 +1,30 @@
+uuid: 3e106d9c-cf53-495f-aa3a-a9db0a2a3d89
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.brands
+  module:
+    - system
+    - views
+  theme:
+    - villadigital
+id: views_block__brands_block_1
+theme: villadigital
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:brands-block_1'
+settings:
+  id: 'views_block:brands-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

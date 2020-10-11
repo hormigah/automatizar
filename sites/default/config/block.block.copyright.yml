@@ -1,0 +1,25 @@
+uuid: 2e7edd0f-7a54-4491-b631-db4e37557d04
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c27901bc-9e37-4219-868a-98ce5ada1612'
+  module:
+    - block_content
+  theme:
+    - villadigital
+id: copyright
+theme: villadigital
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:c27901bc-9e37-4219-868a-98ce5ada1612'
+settings:
+  id: 'block_content:c27901bc-9e37-4219-868a-98ce5ada1612'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

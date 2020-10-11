@@ -1,0 +1,25 @@
+uuid: c0e0810a-6dba-4124-ad60-43323dab7e5f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight
+    - field.field.block_content.highlight.field_highlights
+  module:
+    - entity_reference_revisions
+id: block_content.highlight.default
+targetEntityType: block_content
+bundle: highlight
+mode: default
+content:
+  field_highlights:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: 53190bec-690b-43f3-a41a-149b569dd8c3
+langcode: es
+status: true
+dependencies:
+  theme:
+    - villadigital
+_core:
+  default_config_hash: HHryZVJbeKi9WnuBGC8FOhBZmBnk2G1H6KxFuy-rC9A
+id: villadigital_local_actions
+theme: villadigital
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

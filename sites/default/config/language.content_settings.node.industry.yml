@@ -1,0 +1,11 @@
+uuid: b224ce7c-2102-4db9-a0ff-27dc1ce409ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.industry
+id: node.industry
+target_entity_type_id: node
+target_bundle: industry
+default_langcode: site_default
+language_alterable: false

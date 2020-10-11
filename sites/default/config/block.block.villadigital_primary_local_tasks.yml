@@ -1,0 +1,22 @@
+uuid: fc28e5d1-e1b7-44ca-8f8d-fecfd10ecc88
+langcode: es
+status: true
+dependencies:
+  theme:
+    - villadigital
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: villadigital_primary_local_tasks
+theme: villadigital
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

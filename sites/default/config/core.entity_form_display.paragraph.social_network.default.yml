@@ -1,0 +1,35 @@
+uuid: dc93724f-fd78-4ef2-b335-238417893c9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_network.field_html
+    - field.field.paragraph.social_network.field_link
+    - paragraphs.paragraphs_type.social_network
+  module:
+    - link
+    - text
+id: paragraph.social_network.default
+targetEntityType: paragraph
+bundle: social_network
+mode: default
+content:
+  field_html:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

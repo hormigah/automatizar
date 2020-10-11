@@ -1,0 +1,50 @@
+uuid: 18521684-8ab2-416b-9df0-c191bd3c0530
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.industry.body
+    - field.field.node.industry.field_cover
+    - field.field.node.industry.field_image
+    - node.type.industry
+  module:
+    - image
+    - text
+    - user
+id: node.industry.default
+targetEntityType: node
+bundle: industry
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cover:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 5a95c103-25c4-4b05-87ca-21da04d0c8bf
+langcode: es
+status: true
+dependencies: {  }
+name: Marca
+vid: brand
+description: ''
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 8a7ea7c6-7796-4425-a65d-1cee34f94d52
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_html
+    - paragraphs.paragraphs_type.social_network
+  module:
+    - text
+id: paragraph.social_network.field_html
+field_name: field_html
+entity_type: paragraph
+bundle: social_network
+label: HTML
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

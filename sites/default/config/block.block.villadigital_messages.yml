@@ -1,0 +1,22 @@
+uuid: 0861a958-e9d6-4c48-8ab6-ebbfa9735073
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - villadigital
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: villadigital_messages
+theme: villadigital
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

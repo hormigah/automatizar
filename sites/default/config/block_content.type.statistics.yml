@@ -1,0 +1,8 @@
+uuid: 524f511e-94c5-42b0-9b99-46a8835cc15d
+langcode: es
+status: true
+dependencies: {  }
+id: statistics
+label: Statistics
+revision: 0
+description: ''

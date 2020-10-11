@@ -1,0 +1,21 @@
+uuid: 11edd6a3-6d9f-434c-8516-1da31e553dca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_right
+    - paragraphs.paragraphs_type.highlight
+  module:
+    - text
+id: paragraph.highlight.field_body_right
+field_name: field_body_right
+entity_type: paragraph
+bundle: highlight
+label: 'Body Right'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

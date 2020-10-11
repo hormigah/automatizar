@@ -1,0 +1,20 @@
+uuid: 701ea5b5-288d-41c5-a2f3-03742e80f1ef
+langcode: es
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'bypass node access'
+  - 'view the administration theme'

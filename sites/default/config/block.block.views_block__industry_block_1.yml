@@ -1,0 +1,30 @@
+uuid: ba5616b7-a101-4028-ac0e-c4cd52e1c7a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.industry
+  module:
+    - system
+    - views
+  theme:
+    - villadigital
+id: views_block__industry_block_1
+theme: villadigital
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:industry-block_1'
+settings:
+  id: 'views_block:industry-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

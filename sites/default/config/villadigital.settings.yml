@@ -1,0 +1,41 @@
+schemas:
+  bootstrap: 8000
+  villadigital: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'https://dev-automatizar.pantheonsite.io/themes/custom/villadigital/favicon.ico'
+  use_default: 1
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+fluid_container: 0
+table_responsive: '-1'
+region_wells:
+  header_top: ''
+  header_top_right: ''
+  header_main: ''
+  header_main_right: ''
+  navigation: ''
+  navigation_collapsible: ''
+  content_top: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''
+langcode: es
