@@ -1,0 +1,25 @@
+uuid: 0e4d7096-5848-48c4-bb80-814acfd8504e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_share
+    - node.type.industry
+  module:
+    - social_media
+id: node.industry.field_social_share
+field_name: field_social_share
+entity_type: node
+bundle: industry
+label: Compartir
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

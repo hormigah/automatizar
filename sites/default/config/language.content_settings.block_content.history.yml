@@ -1,0 +1,11 @@
+uuid: 45d44ade-fbfd-4211-ae53-2a496448c84b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+id: block_content.history
+target_entity_type_id: block_content
+target_bundle: history
+default_langcode: site_default
+language_alterable: false

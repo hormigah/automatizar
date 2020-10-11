@@ -10,31 +10,31 @@ dependencies:
     - field.field.paragraph.company_headquarters.field_phone
     - paragraphs.paragraphs_type.company_headquarters
   module:
-    - telephone
+    - telephone_formatter
 id: paragraph.company_headquarters.default
 targetEntityType: paragraph
 bundle: company_headquarters
 mode: default
 content:
   field_address:
-    weight: 0
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_city:
-    weight: 3
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_name:
-    weight: 2
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -42,18 +42,20 @@ content:
     region: content
   field_office_hours:
     weight: 4
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_phone:
-    weight: 1
-    label: above
+    weight: 3
+    label: hidden
     settings:
-      title: ''
+      format: 1
+      link: true
+      default_country: CO
     third_party_settings: {  }
-    type: telephone_link
+    type: telephone_formatter
     region: content
 hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 59aeb7ba-d833-4bd5-ab5e-51f52a989e7d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: industria
+label: Industria
+type: 'canonical_entities:node'
+pattern: 'industrias/[node:title]'
+selection_criteria:
+  b897f99d-8578-499d-8d4d-8c3cd1658d9e:
+    id: node_type
+    bundles:
+      industry: industry
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b897f99d-8578-499d-8d4d-8c3cd1658d9e
+selection_logic: and
+weight: -5
+relationships: {  }

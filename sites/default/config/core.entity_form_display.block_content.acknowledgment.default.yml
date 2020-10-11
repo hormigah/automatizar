@@ -1,0 +1,42 @@
+uuid: 06029980-b2c7-4421-be4a-045e014d0851
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.acknowledgment
+    - field.field.block_content.acknowledgment.field_acknowledgments
+  module:
+    - paragraphs
+id: block_content.acknowledgment.default
+targetEntityType: block_content
+bundle: acknowledgment
+mode: default
+content:
+  field_acknowledgments:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

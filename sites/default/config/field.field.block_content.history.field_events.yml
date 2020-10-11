@@ -1,0 +1,43 @@
+uuid: b71d6991-3d21-4fe1-bdcd-e873cc61cb9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.storage.block_content.field_events
+    - paragraphs.paragraphs_type.event
+  module:
+    - entity_reference_revisions
+id: block_content.history.field_events
+field_name: field_events
+entity_type: block_content
+bundle: history
+label: Eventos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      event: event
+    target_bundles_drag_drop:
+      company_headquarters:
+        weight: 6
+        enabled: false
+      event:
+        enabled: true
+        weight: 7
+      highlight:
+        weight: 8
+        enabled: false
+      social_network:
+        weight: 9
+        enabled: false
+      statistic:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

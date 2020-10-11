@@ -1,0 +1,23 @@
+uuid: 2a4b3ef2-2daf-4a2b-a1a2-1ed1d97e7ba0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.acknowledgment
+id: paragraph.acknowledgment.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: acknowledgment
+label: Año
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

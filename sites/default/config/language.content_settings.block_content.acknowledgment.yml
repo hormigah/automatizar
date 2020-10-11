@@ -1,0 +1,11 @@
+uuid: 0c528dad-194f-4200-8367-78454ab01aca
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.acknowledgment
+id: block_content.acknowledgment
+target_entity_type_id: block_content
+target_bundle: acknowledgment
+default_langcode: site_default
+language_alterable: false

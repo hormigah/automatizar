@@ -1,0 +1,23 @@
+uuid: 4c56b695-ab15-49c0-9c3b-9d9a05be6347
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.history.body
+field_name: body
+entity_type: block_content
+bundle: history
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

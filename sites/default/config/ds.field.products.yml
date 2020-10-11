@@ -1,0 +1,11 @@
+id: products
+label: Products
+ui_limit: 'product_category|*'
+properties:
+  block: 'views_block:products-block_1'
+  use_block_title: false
+  add_block_wrappers: false
+type: block
+type_label: 'Block field'
+entities:
+  taxonomy_term: taxonomy_term

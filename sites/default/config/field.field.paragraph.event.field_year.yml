@@ -1,0 +1,23 @@
+uuid: 0b34c529-7827-4813-9083-63bc55e7b524
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.event
+id: paragraph.event.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: event
+label: Año
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

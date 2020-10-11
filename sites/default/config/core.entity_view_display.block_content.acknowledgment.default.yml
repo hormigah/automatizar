@@ -1,0 +1,25 @@
+uuid: 9c226f9d-6579-4121-96f9-4a4438cbb42f
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.acknowledgment
+    - field.field.block_content.acknowledgment.field_acknowledgments
+  module:
+    - entity_reference_revisions
+id: block_content.acknowledgment.default
+targetEntityType: block_content
+bundle: acknowledgment
+mode: default
+content:
+  field_acknowledgments:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

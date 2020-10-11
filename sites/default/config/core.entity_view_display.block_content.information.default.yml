@@ -8,12 +8,13 @@ dependencies:
     - field.field.block_content.information.field_image
   module:
     - ds
+    - field_group
     - image
     - text
 third_party_settings:
   ds:
     layout:
-      id: bs_2col
+      id: bs_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -26,30 +27,44 @@ third_party_settings:
           add_layout_class: 1
           attributes: ''
         regions:
-          left:
+          main:
             wrapper: div
             classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          right:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
+              col-sm-12: col-sm-12
             add_region_classes: 1
             attributes: ''
     regions:
-      left:
+      main:
+        - group_fields
         - block_description
         - body
-      right:
         - field_image
     fields:
       block_description:
         plugin_id: block_description
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
+  field_group:
+    group_fields:
+      children:
+        - block_description
+        - body
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: main
+      format_settings:
+        id: ''
+        classes: fields
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Fields
 id: block_content.information.default
 targetEntityType: block_content
 bundle: information
@@ -58,18 +73,18 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: left
+    region: main
   field_image:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: right
+    region: main
 hidden:
   langcode: true

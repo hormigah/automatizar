@@ -10,6 +10,6 @@ third_party_settings:
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Main navigation'
+label: 'Menú principal'
 description: 'Enlaces de secciones del sitio'
 locked: true

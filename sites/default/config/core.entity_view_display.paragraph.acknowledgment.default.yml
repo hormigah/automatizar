@@ -1,0 +1,31 @@
+uuid: e2aaa633-9f7f-43c1-b3a3-f015c3c9bfd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acknowledgment.field_title
+    - field.field.paragraph.acknowledgment.field_year
+    - paragraphs.paragraphs_type.acknowledgment
+id: paragraph.acknowledgment.default
+targetEntityType: paragraph
+bundle: acknowledgment
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_year:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

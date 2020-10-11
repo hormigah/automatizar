@@ -1,0 +1,18 @@
+uuid: 8252fb86-b1bc-49f2-b298-a0e68e034415
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Colaborador
+type: employee
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

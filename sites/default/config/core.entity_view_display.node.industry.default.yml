@@ -6,11 +6,73 @@ dependencies:
     - field.field.node.industry.body
     - field.field.node.industry.field_cover
     - field.field.node.industry.field_image
+    - field.field.node.industry.field_social_share
     - node.type.industry
   module:
+    - ds
     - image
+    - social_media
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-sm-7: col-sm-7
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-5: col-sm-5
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      top:
+        - field_cover
+        - node_title
+      left:
+        - body
+      right:
+        - field_image
+        - field_social_share
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
 id: node.industry.default
 targetEntityType: node
 bundle: industry
@@ -19,32 +81,35 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: left
   field_cover:
-    weight: 104
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: top
   field_image:
-    weight: 102
-    label: above
+    weight: 3
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  links:
-    weight: 100
+    region: right
+  field_social_share:
+    weight: 4
+    label: above
     settings: {  }
     third_party_settings: {  }
-    region: content
+    type: social_media_default
+    region: right
 hidden:
   langcode: true
+  links: true

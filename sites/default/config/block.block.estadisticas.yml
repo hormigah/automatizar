@@ -12,7 +12,7 @@ dependencies:
 id: estadisticas
 theme: villadigital
 region: content
-weight: -4
+weight: -6
 provider: null
 plugin: 'block_content:941e721a-d8b7-4235-9fe5-d83c603556cb'
 settings:

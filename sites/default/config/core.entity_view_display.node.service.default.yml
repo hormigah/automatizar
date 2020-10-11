@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.service.field_cover
     - field.field.node.service.field_icon
     - field.field.node.service.field_image
+    - field.field.node.service.field_social_share
     - node.type.service
   module:
     - ds
     - image
+    - social_media
     - text
     - user
 third_party_settings:
@@ -61,6 +63,7 @@ third_party_settings:
         - body
       right:
         - field_image
+        - field_social_share
     fields:
       node_title:
         plugin_id: node_title
@@ -100,6 +103,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: right
+  field_social_share:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_default
     region: right
 hidden:
   field_icon: true

@@ -37,13 +37,13 @@ third_party_settings:
           left:
             wrapper: div
             classes:
-              col-xs-4: col-xs-4
+              col-sm-4: col-sm-4
             add_region_classes: 1
             attributes: ''
           right:
             wrapper: div
             classes:
-              col-xs-8: col-xs-8
+              col-sm-8: col-sm-8
             add_region_classes: 1
             attributes: ''
           bottom:

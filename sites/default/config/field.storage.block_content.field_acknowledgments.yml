@@ -1,0 +1,21 @@
+uuid: 57608105-218c-48fc-8b63-df336254abf2
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_acknowledgments
+field_name: field_acknowledgments
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: 39f509fc-798e-4218-8534-8a649cec15ff
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.field.block_content.history.body
+    - field.field.block_content.history.field_events
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.history.default
+targetEntityType: block_content
+bundle: history
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_events:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

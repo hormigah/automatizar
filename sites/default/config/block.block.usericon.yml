@@ -1,0 +1,20 @@
+uuid: b245a635-b131-4ba6-985a-25d70f1b8782
+langcode: es
+status: true
+dependencies:
+  module:
+    - portal
+  theme:
+    - villadigital
+id: usericon
+theme: villadigital
+region: header_main_right
+weight: 0
+provider: null
+plugin: user_icon
+settings:
+  id: user_icon
+  label: 'User Icon'
+  provider: portal
+  label_display: '0'
+visibility: {  }

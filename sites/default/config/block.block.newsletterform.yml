@@ -1,0 +1,26 @@
+uuid: b15393c6-a120-4a25-8996-4efd01409ab6
+langcode: es
+status: true
+dependencies:
+  module:
+    - portal
+    - system
+  theme:
+    - villadigital
+id: newsletterform
+theme: villadigital
+region: content
+weight: 0
+provider: null
+plugin: newsletter_form
+settings:
+  id: newsletter_form
+  label: 'Newsletter form'
+  provider: portal
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

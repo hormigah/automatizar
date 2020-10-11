@@ -1,0 +1,54 @@
+uuid: db7aa5ca-f512-45a0-8f85-e831f7865a05
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.history
+    - field.field.block_content.history.body
+    - field.field.block_content.history.field_events
+  module:
+    - paragraphs
+    - text
+id: block_content.history.default
+targetEntityType: block_content
+bundle: history
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_events:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

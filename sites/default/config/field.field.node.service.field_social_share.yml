@@ -1,0 +1,25 @@
+uuid: 1e477c7e-0a0f-4439-98fa-0a6fd30c7c4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_share
+    - node.type.service
+  module:
+    - social_media
+id: node.service.field_social_share
+field_name: field_social_share
+entity_type: node
+bundle: service
+label: Compartir
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: social_media

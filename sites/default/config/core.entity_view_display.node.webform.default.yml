@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.webform.body
     - field.field.node.webform.field_company_headquarters
+    - field.field.node.webform.field_image
     - field.field.node.webform.webform
     - node.type.webform
   module:
     - ds
     - entity_reference_revisions
+    - image
     - text
     - user
     - webform
@@ -38,13 +40,13 @@ third_party_settings:
           left:
             wrapper: div
             classes:
-              col-sm-3: col-sm-3
+              col-sm-4: col-sm-4
             add_region_classes: 1
             attributes: ''
           right:
             wrapper: div
             classes:
-              col-sm-8: col-sm-8
+              col-sm-7: col-sm-7
             add_region_classes: 1
             attributes: ''
           bottom:
@@ -77,12 +79,21 @@ content:
   field_company_headquarters:
     type: entity_reference_revisions_entity_view
     weight: 1
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: left
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   webform:
     weight: 2
     label: hidden

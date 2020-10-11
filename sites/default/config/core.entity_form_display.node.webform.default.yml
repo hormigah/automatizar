@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.node.webform.body
     - field.field.node.webform.field_company_headquarters
+    - field.field.node.webform.field_image
     - field.field.node.webform.webform
+    - image.style.thumbnail
     - node.type.webform
   module:
+    - image
     - paragraphs
     - path
     - text
@@ -45,6 +48,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   langcode:
     type: language_select

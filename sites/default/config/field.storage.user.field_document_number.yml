@@ -1,0 +1,21 @@
+uuid: bec246b8-1798-4f69-936b-6088ac60d7a9
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_document_number
+field_name: field_document_number
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

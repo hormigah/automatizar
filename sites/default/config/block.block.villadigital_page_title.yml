@@ -2,6 +2,8 @@ uuid: 25f79a9b-95c0-43f3-a0b2-f725dd8df1ce
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - villadigital
 _core:
@@ -9,7 +11,7 @@ _core:
 id: villadigital_page_title
 theme: villadigital
 region: content
-weight: -13
+weight: -15
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Título de la página'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "servicios/*\r\nindustrias/*"
+    negate: true
+    context_mapping: {  }

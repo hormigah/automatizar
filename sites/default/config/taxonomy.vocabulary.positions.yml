@@ -1,0 +1,8 @@
+uuid: d0304aba-8637-423a-b14d-358872b781c8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Cargos laborales'
+vid: positions
+description: ''
+weight: 0

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.industry.body
     - field.field.node.industry.field_cover
     - field.field.node.industry.field_image
+    - field.field.node.industry.field_social_share
     - node.type.industry
   module:
     - text
@@ -32,4 +33,5 @@ content:
 hidden:
   field_cover: true
   field_image: true
+  field_social_share: true
   langcode: true

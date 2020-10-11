@@ -1,0 +1,46 @@
+uuid: 6d561383-9d6f-4c02-bb0a-208798443d3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.acknowledgment
+    - field.storage.block_content.field_acknowledgments
+    - paragraphs.paragraphs_type.acknowledgment
+  module:
+    - entity_reference_revisions
+id: block_content.acknowledgment.field_acknowledgments
+field_name: field_acknowledgments
+entity_type: block_content
+bundle: acknowledgment
+label: Reconocimientos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      acknowledgment: acknowledgment
+    target_bundles_drag_drop:
+      acknowledgment:
+        enabled: true
+        weight: 7
+      company_headquarters:
+        weight: 8
+        enabled: false
+      event:
+        weight: 9
+        enabled: false
+      highlight:
+        weight: 10
+        enabled: false
+      social_network:
+        weight: 11
+        enabled: false
+      statistic:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

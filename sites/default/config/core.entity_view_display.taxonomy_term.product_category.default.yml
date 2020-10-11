@@ -6,28 +6,50 @@ dependencies:
     - field.field.taxonomy_term.product_category.field_image
     - taxonomy.vocabulary.product_category
   module:
-    - image
-    - text
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - 'dynamic_block_field:taxonomy_term-link_product_categories'
+        - 'dynamic_block_field:taxonomy_term-products'
+    fields:
+      'dynamic_block_field:taxonomy_term-link_product_categories':
+        plugin_id: 'dynamic_block_field:taxonomy_term-link_product_categories'
+        weight: 0
+        label: hidden
+        formatter: default
+      'dynamic_block_field:taxonomy_term-products':
+        plugin_id: 'dynamic_block_field:taxonomy_term-products'
+        weight: 1
+        label: hidden
+        formatter: default
 id: taxonomy_term.product_category.default
 targetEntityType: taxonomy_term
 bundle: product_category
 mode: default
-content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_image:
-    weight: 1
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
+content: {  }
 hidden:
+  description: true
+  field_image: true
   langcode: true

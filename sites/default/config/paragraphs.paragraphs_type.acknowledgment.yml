@@ -1,0 +1,10 @@
+uuid: ef69ba6d-e614-423c-9cb2-c818e3ddeac5
+langcode: es
+status: true
+dependencies: {  }
+id: acknowledgment
+label: Reconocimiento
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

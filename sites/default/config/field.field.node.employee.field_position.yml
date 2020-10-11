@@ -1,0 +1,29 @@
+uuid: 5c040e01-9859-4be9-a947-7a82eb1fca2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.employee
+    - taxonomy.vocabulary.positions
+id: node.employee.field_position
+field_name: field_position
+entity_type: node
+bundle: employee
+label: Posición
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      positions: positions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,35 @@
+uuid: eab93159-665b-447b-a316-92cb55ce93dd
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_cart_blocks
+  theme:
+    - villadigital
+id: cartbutton
+theme: villadigital
+region: header_main_right
+weight: 0
+provider: null
+plugin: commerce_cart_blocks_button
+settings:
+  id: commerce_cart_blocks_button
+  label: 'Cart button'
+  provider: commerce_cart_blocks
+  label_display: '0'
+  hide_if_empty: false
+  display_links:
+    cart: '0'
+    checkout: '0'
+  cart_link_text: Cart
+  checkout_link_text: Checkout
+  count_text_singular: '@count'
+  count_text_plural: '@count'
+  display_heading: 0
+  heading_text: '@items in your cart'
+  show_items: 0
+  dropdown: false
+  button_label: '@items'
+  icon_type: class
+  icon_class: 'la la-cart-plus'
+visibility: {  }

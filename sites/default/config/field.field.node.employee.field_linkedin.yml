@@ -1,0 +1,23 @@
+uuid: 130e13f3-a263-4600-8c02-05831086f34d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin
+    - node.type.employee
+  module:
+    - link
+id: node.employee.field_linkedin
+field_name: field_linkedin
+entity_type: node
+bundle: employee
+label: 'Linked in'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

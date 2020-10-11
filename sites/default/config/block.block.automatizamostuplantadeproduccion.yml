@@ -12,7 +12,7 @@ dependencies:
 id: automatizamostuplantadeproduccion
 theme: villadigital
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: 'block_content:f28fd5ba-9909-4f8c-8999-f6ed33398883'
 settings:

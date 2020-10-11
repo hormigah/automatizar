@@ -1,0 +1,26 @@
+uuid: 30a3c3d3-35eb-491d-b7dd-6b99698abd54
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: industry
+label: Industria
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      industry: industry
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

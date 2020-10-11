@@ -1,0 +1,31 @@
+uuid: 94a10a9c-cce6-4478-b315-e9b82c8bb79d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acknowledgment.field_title
+    - field.field.paragraph.acknowledgment.field_year
+    - paragraphs.paragraphs_type.acknowledgment
+id: paragraph.acknowledgment.default
+targetEntityType: paragraph
+bundle: acknowledgment
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_year:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

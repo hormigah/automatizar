@@ -1,0 +1,8 @@
+uuid: bdf4e865-70fc-4c33-88f5-380fdbda12ec
+langcode: es
+status: true
+dependencies: {  }
+id: acknowledgment
+label: Reconocimiento
+revision: 0
+description: ''

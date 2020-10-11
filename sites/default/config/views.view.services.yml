@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.services
     - field.storage.node.body
     - field.storage.node.field_icon
     - image.style.thumbnail_2
@@ -10,10 +11,12 @@ dependencies:
   content:
     - 'block_content:basic:657061dc-e2cc-4992-9bba-1bf2c8d495e6'
   module:
+    - entityqueue
     - image
     - node
     - text
     - user
+    - views_bootstrap
     - views_fieldsets
 id: services
 label: Services
@@ -60,11 +63,17 @@ display:
           items_per_page: null
           offset: 0
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: col-sm-3
+          row_class: ''
           default_row_class: true
+          alignment: horizontal
+          columns: '999'
+          col_xs: col-xs-6
+          col_sm: col-sm-4
+          col_md: col-md-3
+          col_lg: col-lg-3
       row:
         type: fields
       fields:
@@ -345,6 +354,19 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
         created:
           id: created
           table: node_field_data
@@ -377,10 +399,21 @@ display:
           plugin_id: entity
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: services
+          entity_type: node
+          plugin_id: entity_queue
       arguments: {  }
       display_extenders: {  }
-      css_class: row
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -389,8 +422,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.services'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_icon'
+        - entity_field_info
+        - views_data
   block_1:
     display_plugin: block
     id: block_1
@@ -406,5 +442,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.services'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_icon'
+        - entity_field_info
+        - views_data
