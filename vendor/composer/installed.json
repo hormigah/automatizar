@@ -921,18 +921,18 @@
     },
     {
         "name": "drupal/commerce",
-        "version": "2.20.0",
-        "version_normalized": "2.20.0.0",
+        "version": "2.21.0",
+        "version_normalized": "2.21.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/commerce.git",
-            "reference": "8.x-2.20"
+            "reference": "8.x-2.21"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.20.zip",
-            "reference": "8.x-2.20",
-            "shasum": "ef187586d1752acf624a750613bd0ae55a7f4f4e"
+            "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.21.zip",
+            "reference": "8.x-2.21",
+            "shasum": "3b38b58458e26f14cc4c203cda3f01ac84296909"
         },
         "require": {
             "commerceguys/intl": "^1.0.0",
@@ -955,6 +955,7 @@
             "drupal/commerce_price": "*",
             "drupal/commerce_product": "*",
             "drupal/commerce_store": "*",
+            "drupal/entity_print": "^2.2",
             "drupal/entity_reference_revisions": "*",
             "drupal/mailsystem": "^4.3",
             "drupal/profile": "*",
@@ -963,8 +964,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.20",
-                "datestamp": "1593196157",
+                "version": "8.x-2.21",
+                "datestamp": "1600787975",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -1407,8 +1408,8 @@
     },
     {
         "name": "drupal/core-vendor-hardening",
-        "version": "8.9.7",
-        "version_normalized": "8.9.7.0",
+        "version": "8.9.2",
+        "version_normalized": "8.9.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -1574,18 +1575,18 @@
     },
     {
         "name": "drupal/inline_entity_form",
-        "version": "1.0.0-rc7",
-        "version_normalized": "1.0.0.0-RC7",
+        "version": "1.0.0-rc8",
+        "version_normalized": "1.0.0.0-RC8",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-            "reference": "8.x-1.0-rc7"
+            "reference": "8.x-1.0-rc8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc7.zip",
-            "reference": "8.x-1.0-rc7",
-            "shasum": "a11e59a8f3632728165170e9337cec9bc8eab870"
+            "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc8.zip",
+            "reference": "8.x-1.0-rc8",
+            "shasum": "103de382dd07b4acdd6bacd5ad76628fdf0eefda"
         },
         "require": {
             "drupal/core": "^8.7.7 || ^9"
@@ -1596,8 +1597,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-1.0-rc7",
-                "datestamp": "1595545223",
+                "version": "8.x-1.0-rc8",
+                "datestamp": "1602172716",
                 "security-coverage": {
                     "status": "not-covered",
                     "message": "RC releases are not covered by Drupal security advisories."

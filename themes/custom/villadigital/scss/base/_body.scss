@@ -534,6 +534,13 @@ h6{
     }
   }
 }
+#block-newsletterform {
+  background-color: color(background, color-2);
+  width: 100vw;
+  margin-left: 50% !important;
+  transform: translateX(-50vw);
+  color: color(text, color-2);
+}
 .path-node {
   .bs-region--right {
     .field {
