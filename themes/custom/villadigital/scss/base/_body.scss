@@ -650,6 +650,38 @@ h6{
     }
   }
 }
+.field--name-field-acknowledgments {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  .field--item {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .field--name-field-year {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid color(background, color-2);
+        top: 38px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    .field--name-dynamic-twig-fieldparagraph-circle {
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid color(background, color-2);
+      border-radius: 50%;
+      background-color: color(background, color-2);
+      margin: auto;
+    }
+  }
+}
 
 
 @include mq-min(sm) {
