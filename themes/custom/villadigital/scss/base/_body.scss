@@ -561,6 +561,19 @@ h6{
   .page-header {
     display: none;
   }
+  .bs-2col-stacked {
+    position: relative;
+  }
+  .field--name-field-image {
+    padding: 0 !important;
+    width: 100vw;
+    margin-left: 50% !important;
+    transform: translateX(-50vw);
+  }
+  .webform-content {
+    position: absolute;
+    top: 20px;
+  }
   .field--name-field-company-headquarters {
     .paragraph--type--company-headquarters  {
       background-color: rgba(255,255,255,.05);
