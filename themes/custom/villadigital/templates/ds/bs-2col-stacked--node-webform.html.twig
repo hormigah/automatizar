@@ -1,45 +1,51 @@
 {#
 /**
  * @file
- * Display Suite 2 column stacked template.
+ * Bootstrap Layouts: "2 Columns (stacked)" template.
  *
- * Available variables:
- * - outer_wrapper: outer wrapper element
- * - header_wrapper: wrapper element around header region
- * - left_wrapper: wrapper element around left region
- * - right_wrapper: wrapper element around right region
- * - footer_wrapper: wrapper element around footer region
- * - attributes: layout attributes
- * - header_attributes: attributes for header region
- * - left_attributes: attributes for left region
- * - right_attributes: attributes for right region
- * - footer_attributes: attributes for footer region
- * - header: content of header region
- * - left: content of left region
- * - right: content of right region
- * - footer: content of footer region
+ * Available layout variables:
+ * - wrapper: Wrapper element for the layout container.
+ * - attributes: Wrapper attributes for the layout container.
+ *
+ * Available region variables:
+ * - top
+ * - left
+ * - right
+ * - bottom
+ *
+ * Each region variable contains the following properties:
+ * - wrapper: The HTML element to use to wrap this region.
+ * - attributes: The HTML attributes to use on the wrapper for this region.
+ * - content: The content to go inside the wrapper for this region.
  */
 #}
-<{{ outer_wrapper }}{{ attributes.addClass('ds-2col-stacked', 'clearfix') }}>
-
+<{{ wrapper }}{{ attributes }}>
   {{ title_suffix.contextual_links }}
 
-  <{{ header_wrapper }}{{ header_attributes.addClass('group-header') }}>
-    {{ header }}
-  </{{ header_wrapper }}>
+  {% if top.content %}
+  <{{ top.wrapper }}{{ top.attributes }}>
+    {{ top.content }}
+  </{{ top.wrapper }}>
+  {% endif %}
 
   <div class="contact-wrapper">
-    <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
-      {{ left }}
-    </{{ left_wrapper }}>
+    {% if left.content %}
+    <{{ left.wrapper }}{{ left.attributes }}>
+      {{ left.content }}
+    </{{ left.wrapper }}>
+    {% endif %}
 
-    <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
-      {{ right }}
-    </{{ right_wrapper }}>
+    {% if right.content %}
+    <{{ right.wrapper }}{{ right.attributes }}>
+      {{ right.content }}
+    </{{ right.wrapper }}>
+    {% endif %}
   </div>
 
-  <{{ footer_wrapper }}{{ footer_attributes.addClass('group-footer') }}>
-    {{ footer }}
-  </{{ footer_wrapper }}>
+  {% if bottom.content %}
+  <{{ bottom.wrapper }}{{ bottom.attributes }}>
+    {{ bottom.content }}
+  </{{ bottom.wrapper }}>
+  {% endif %}
 
-</{{ outer_wrapper }}>
+</{{ wrapper }}>
