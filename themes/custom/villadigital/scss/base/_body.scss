@@ -674,9 +674,15 @@ h6{
   flex-wrap: wrap;
   margin-top: 60px;
   .field--item {
-    width: 100%;
+    width: 33%;
     text-align: center;
     position: relative;
+    img {
+      margin: auto;
+    }
+    .field {
+      width: 100%;
+    }
   }
 }
 .field--name-field-acknowledgments {
