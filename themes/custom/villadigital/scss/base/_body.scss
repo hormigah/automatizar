@@ -546,6 +546,9 @@ h6{
       color: color(text, color-4);
     }
   }
+  a {
+    color: #fff;
+  }
 }
 .path-node {
   .bs-region--right {
@@ -664,6 +667,16 @@ h6{
     &:before {
       opacity: .5;
     }
+  }
+}
+.field--name-field-events {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  .field--item {
+    width: 100%;
+    text-align: center;
+    position: relative;
   }
 }
 .field--name-field-acknowledgments {
