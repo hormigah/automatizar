@@ -28,13 +28,15 @@
     {{ header }}
   </{{ header_wrapper }}>
 
-  <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
-    {{ left }}
-  </{{ left_wrapper }}>
+  <div class="contact-wrapper">
+    <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
+      {{ left }}
+    </{{ left_wrapper }}>
 
-  <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
-    {{ right }}
-  </{{ right_wrapper }}>
+    <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
+      {{ right }}
+    </{{ right_wrapper }}>
+  </div>
 
   <{{ footer_wrapper }}{{ footer_attributes.addClass('group-footer') }}>
     {{ footer }}
