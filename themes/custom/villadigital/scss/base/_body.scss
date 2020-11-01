@@ -673,10 +673,14 @@ h6{
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
+  margin-bottom: 40px;
   .field--item {
     width: 33%;
     text-align: center;
     position: relative;
+    .paragraph--type--event {
+      margin-bottom: 20px;
+    }
     img {
       margin: auto;
       background-color: color(background, color-8);
