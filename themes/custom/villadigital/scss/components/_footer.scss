@@ -22,7 +22,7 @@
       font-size: map-get($sizes, "thumb");
       position: relative;
       .block-title {
-        display: inline-block;        
+        display: inline-block;
         margin-right: 10px;
       }
       .form-group {
@@ -84,7 +84,6 @@
               &:hover {
                 text-decoration: underline;
               }
-              
             }
           }
         }
@@ -114,17 +113,22 @@
     .footer-wrapper {
       .region-footer {
         display: flex;
+        justify-content: space-between;
         #block-views-block-company-contact-information-block-2 {
           width: 30%;
           margin-right: 15px;
+        }
+        #block-partner {
+          float: right;
+          width: 30%;
         }
       }
     }
   }
 }
 @include mq-min(lg) {
-  
+
 }
 @include mq-min(xl) {
-  
+
 }

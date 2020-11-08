@@ -2397,7 +2397,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
   text-decoration: underline;
 }
 
-/* line 93, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+/* line 92, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
 .footer .footer-wrapper .region-footer-bottom {
   border-top: 1px solid #333333;
   font-size: 0.875rem;
@@ -2406,22 +2406,28 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 }
 
 @media (min-width: 720px) {
-  /* line 108, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  /* line 107, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
   .footer .region-footer-top {
     padding: 20px 30px;
   }
-  /* line 110, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  /* line 109, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
   .footer .region-footer-top:before {
     left: -50%;
   }
-  /* line 115, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  /* line 114, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
   .footer .footer-wrapper .region-footer {
     display: flex;
+    justify-content: space-between;
   }
   /* line 117, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
   .footer .footer-wrapper .region-footer #block-views-block-company-contact-information-block-2 {
     width: 30%;
     margin-right: 15px;
+  }
+  /* line 121, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/components/_footer.scss */
+  .footer .footer-wrapper .region-footer #block-partner {
+    float: right;
+    width: 30%;
   }
 }
 
