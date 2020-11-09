@@ -669,6 +669,14 @@ h6{
     }
   }
 }
+.page {
+  .field--name-body {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid lightgrey;
+    margin-right: 20px;
+  }
+}
 .field--name-field-events {
   display: flex;
   flex-wrap: wrap;
