@@ -725,6 +725,7 @@ h6{
       font-weight: 600;
       font-size: map-get($sizes, "thumb");
       width: 100%;
+      margin-bottom: 0;
       &::after {
         content: "";
         position: absolute;
