@@ -46,7 +46,7 @@ class Newsletter extends BlockBase {
     ];
     $build['block']['row']['left']['title'] = [
       '#type' => 'markup',
-      '#markup' => Markup::create('<h2 class="block-title">Suscribete al Newsletter</h2><div class="seperater"></div>'),
+      '#markup' => Markup::create('<h2 class="block-title">Suscríbete al Newsletter</h2><div class="seperater"></div>'),
     ];
     $build['block']['row']['left']['description'] = [
       '#type' => 'markup',

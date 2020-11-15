@@ -714,15 +714,17 @@ h6{
 }
 .field--name-field-acknowledgments {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 60px;
   .field--item {
-    width: 100%;
+    width: 25%;
     text-align: center;
     position: relative;
+    margin-bottom: 50px;
     .field--name-field-year {
       font-weight: 600;
       font-size: map-get($sizes, "thumb");
+      width: 100%;
       &::after {
         content: "";
         position: absolute;
