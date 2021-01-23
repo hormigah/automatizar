@@ -22,9 +22,10 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/entity": "^1.2",
         "drupal/telephone_formatter": "^1.0",
         "drupal/views_bootstrap": "^4.3",
-        "drupal/webform": "^5.22"
+        "drupal/webform": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"

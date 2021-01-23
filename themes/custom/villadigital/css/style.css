@@ -1679,7 +1679,7 @@ a.text-link.text-secondary-base:hover, button.text-link.text-secondary-base:hove
 /* line 39, ../../../../Documents/Projects/Automatizar/SourceCode/themes/custom/villadigital/scss/base/_slide.scss */
 .slick-dots li button {
   background: none;
-  border: 2px solid red;
+  border: 2px solid #FFFFFF;
   border-radius: 100%;
   display: inline-block;
   height: 18px;
