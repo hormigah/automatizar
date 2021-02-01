@@ -570,11 +570,13 @@ h6{
   .bs-2col-stacked {
     position: relative;
   }
-  .field--name-field-image {
-    padding: 0 !important;
-    width: 100vw;
-    margin-left: 50% !important;
-    transform: translateX(-50vw);
+  .bs-region--top {
+    .field--name-field-image {
+      padding: 0 !important;
+      width: 100vw;
+      margin-left: 50% !important;
+      transform: translateX(-50vw);
+    }
   }
   .webform-content {
     position: absolute;
