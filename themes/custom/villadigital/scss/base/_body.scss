@@ -436,8 +436,8 @@ h6{
   }
   .bs-region--left {
     .field--name-body {
-      margin-top: 20%;
-      font-size: map-get($sizes, "medium");
+      margin-top: 5%;
+      font-size: map-get($sizes, "thumb");
       position: absolute;
     }
   }
@@ -454,6 +454,9 @@ h6{
     transform: translateX(-50vw);
     img {
       width: 100%;
+    }
+    .field--name-field-image {
+      display: none;
     }
   }
 }
@@ -816,7 +819,16 @@ h6{
 }
 @include mq-min(md) {
   .block-content--type-statistics {
+    .bs-region--left {
+      .field--name-body {
+        margin-top: 20%;
+        font-size: map-get($sizes, "medium");
+      }
+    }
     .bs-region--bottom {
+      .field--name-field-image {
+        display: block;
+      }
       .field--name-field-image-mobile {
         display: none;
       }
