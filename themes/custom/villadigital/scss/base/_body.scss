@@ -814,6 +814,15 @@ h6{
     }
   }
 }
+@include mq-min(md) {
+  .block-content--type-statistics {
+    .bs-region--bottom {
+      .field--name-field-image-mobile {
+        display: none;
+      }
+    }
+  }
+}
 @include mq-min(lg) {
 
 }
