@@ -763,6 +763,29 @@ h6{
     }
   }
 }
+.commerce-product {
+  .field--name-body {
+    margin: 15px 0;
+  }
+  .field--name-dynamic-block-fieldcommerce-product-product-detail {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 10px;
+  }
+  .product-variation {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 0;
+    .views-field-price__number {
+      color: #004d7f;
+      font-weight: bold;
+      font-size: map-get($sizes, "thumb");
+    }
+  }
+}
 
 
 @include mq-min(sm) {
