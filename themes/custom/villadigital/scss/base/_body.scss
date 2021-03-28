@@ -308,11 +308,15 @@ h6{
   }
 }
 .view-products {
+  .view-header {
+    width: 100%
+  }
   .product {
     background-color: color(background, color-1);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    margin-bottom: 20px;
     .fields-text {
       padding: map-get($sizes, "base");
       .views-field-sku {
@@ -345,11 +349,13 @@ h6{
   .view-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
     .views-field-name {
       a {
         border: 2px solid color(border, color-9);
         border-radius: 4px;
-        margin: 20px 10px;
+        margin: 5px;
         padding: 5px;
         display: block;
         color: color(text, color-9);
