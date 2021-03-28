@@ -792,6 +792,9 @@ h6{
     }
   }
 }
+.order-total-line-label {
+  margin-right: 15px;
+}
 
 
 @include mq-min(sm) {

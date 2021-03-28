@@ -14,7 +14,8 @@ use Drupal\Core\Link;
  *   entity_type = "node",
  *   provider = "portal",
  *   ui_limit = {
- *    "industry|*"
+ *    "industry|*",
+ *    "solution|*"
  *   }
  * )
  */
