@@ -15,7 +15,7 @@ use Drupal\Core\Link;
  *   provider = "portal",
  *   ui_limit = {
  *    "industry|*",
- *    "solution|*"
+ *    "solucion|*"
  *   }
  * )
  */
