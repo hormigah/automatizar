@@ -9,7 +9,7 @@ use Drupal\views\ResultRow;
  */
 function portal_preprocess_views_view_unformatted(&$variables) {
   $view = $variables['view'];
-  
+
   if ($view->id() == 'products_categories_link') {
     if ($term = \Drupal::routeMatch()->getParameter('taxonomy_term')) {
       $tid = $term->id();
@@ -26,4 +26,16 @@ function portal_preprocess_views_view_unformatted(&$variables) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function portal_theme($existing, $type, $theme, $path) {
+  return [
+    'commerce_order_receipt' => [
+      'template' => 'portal-commerce-order-receipt',
+      'base hook' => 'commerce_order_receipt',
+    ],
+  ];
 }
