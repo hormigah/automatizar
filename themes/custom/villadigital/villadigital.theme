@@ -20,7 +20,7 @@ function villadigital_theme_suggestions_block_alter(array &$suggestions, array $
       $suggestions[] = 'block__content';
     }
   }
-  
+
   return $suggestions;
 }
 
@@ -47,4 +47,16 @@ function villadigital_preprocess_views_view(&$variables){
   if($view->id() == 'product_cageries') {
     $variables['more']['#options']['attributes']['class'][] = 'btn btn-primary';
   }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function villadigital_theme($existing, $type, $theme, $path) {
+  return [
+    'commerce_order_receipt' => [
+      'template' => 'commerce-order-receipt',
+      'base hook' => 'commerce_order_receipt',
+    ],
+  ];
 }
