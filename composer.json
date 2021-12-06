@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/ctools": "^3.7",
         "drupal/entity": "^1.2",
         "drupal/swiftmailer": "^2.0",
         "drupal/telephone_formatter": "^1.0",
