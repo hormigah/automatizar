@@ -15,11 +15,12 @@
       margin: 0 25px;
       a {
         background-color: transparent;
-        color: color(text, color-1);
+        color: color(text, color-4);
         font-weight: 500;
         padding: 15px 0;
         transition: all .8s;
         &.active-trail {
+          color: color(text, color-4);
           background-color: transparent;
         }
         &:hover {
@@ -45,7 +46,7 @@
           width: calc(100% + 2px);
           position: absolute;
           bottom: 0;
-          left: -1px;
+          left: -1px; 
         }
       }
       &:hover {
@@ -62,7 +63,7 @@
     }
   }
   .middle-area {
-    .region-header-top {
+    .region-header-top {      
       display: table;
       float: left;
       vertical-align: middle;
@@ -266,18 +267,6 @@
 
 
 @include mq-min(sm) {
-  .header {
-    .navbar-nav {
-      li {
-        a {
-          color: color(text, color-4);
-          &.active-trail {
-            color: color(text, color-4);
-          }
-        }
-      }
-    }
-  }
 }
 @include mq-min(md) {
   .header {
@@ -425,8 +414,13 @@
   }
 }
 @include mq-min(xl) {
-
+  
 }
+
+
+
+
+
 
 
 @include mq-max(sm) {
@@ -461,7 +455,7 @@
                             opacity: 0.9;
                             top: 13px;
                             @include prefix(transform, rotate(135deg), webkit moz o ms);
-                        }
+                        } 
                         &:nth-child(3){
                             background-color: transparent;
                             height: 12px;

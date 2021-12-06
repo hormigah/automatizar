@@ -86,9 +86,7 @@ h5{
 h6{
   font-size: map-get($sizes, "tiny");
 }
-.page-header {
-  margin-top: 20px;
-}
+
 .main-container {
   .region-content {
     section {
@@ -308,15 +306,11 @@ h6{
   }
 }
 .view-products {
-  .view-header {
-    width: 100%
-  }
   .product {
     background-color: color(background, color-1);
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-    margin-bottom: 20px;
     .fields-text {
       padding: map-get($sizes, "base");
       .views-field-sku {
@@ -349,13 +343,11 @@ h6{
   .view-content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
     .views-field-name {
       a {
         border: 2px solid color(border, color-9);
         border-radius: 4px;
-        margin: 5px;
+        margin: 20px 10px;
         padding: 5px;
         display: block;
         color: color(text, color-9);
@@ -442,8 +434,8 @@ h6{
   }
   .bs-region--left {
     .field--name-body {
-      margin-top: 5%;
-      font-size: map-get($sizes, "thumb");
+      margin-top: 20%;
+      font-size: map-get($sizes, "medium");
       position: absolute;
     }
   }
@@ -460,9 +452,6 @@ h6{
     transform: translateX(-50vw);
     img {
       width: 100%;
-    }
-    .field--name-field-image {
-      display: none;
     }
   }
 }
@@ -581,13 +570,11 @@ h6{
   .bs-2col-stacked {
     position: relative;
   }
-  .bs-region--top {
-    .field--name-field-image {
-      padding: 0 !important;
-      width: 100vw;
-      margin-left: 50% !important;
-      transform: translateX(-50vw);
-    }
+  .field--name-field-image {
+    padding: 0 !important;
+    width: 100vw;
+    margin-left: 50% !important;
+    transform: translateX(-50vw);
   }
   .webform-content {
     position: absolute;
@@ -769,32 +756,6 @@ h6{
     }
   }
 }
-.commerce-product {
-  .field--name-body {
-    margin: 15px 0;
-  }
-  .field--name-dynamic-block-fieldcommerce-product-product-detail {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    padding: 10px;
-  }
-  .product-variation {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 15px 0;
-    .views-field-price__number {
-      color: #004d7f;
-      font-weight: bold;
-      font-size: map-get($sizes, "thumb");
-    }
-  }
-}
-.order-total-line-label {
-  margin-right: 15px;
-}
 
 
 @include mq-min(sm) {
@@ -846,24 +807,6 @@ h6{
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-  }
-}
-@include mq-min(md) {
-  .block-content--type-statistics {
-    .bs-region--left {
-      .field--name-body {
-        margin-top: 20%;
-        font-size: map-get($sizes, "medium");
-      }
-    }
-    .bs-region--bottom {
-      .field--name-field-image {
-        display: block;
-      }
-      .field--name-field-image-mobile {
-        display: none;
-      }
     }
   }
 }
