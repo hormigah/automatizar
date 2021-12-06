@@ -77,7 +77,7 @@ class ProductTypeForm extends CommerceBundleEntityFormBase {
     else {
       $storage = $this->entityTypeManager->getStorage('commerce_product');
       $product = $storage->create(['type' => $product_type->id()]);
-      $products_exist = $storage->getQuery()->condition('type', $product_type->id())->execute();
+      $products_exist = $storage->getQuery()->accessCheck(FALSE)->condition('type', $product_type->id())->execute();
     }
     $form_state->set('original_entity', $this->entity->createDuplicate());
 
@@ -126,7 +126,7 @@ class ProductTypeForm extends CommerceBundleEntityFormBase {
     ];
     $form['product_status'] = [
       '#type' => 'checkbox',
-      '#title' => t('Publish new products of this type by default.'),
+      '#title' => $this->t('Publish new products of this type by default.'),
       '#default_value' => $product->isPublished(),
     ];
     $form = $this->buildTraitForm($form, $form_state);

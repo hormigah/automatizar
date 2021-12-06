@@ -62,6 +62,13 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
   protected $defaultProfile;
 
   /**
+   * A test user.
+   *
+   * @var \Drupal\user\UserInterface
+   */
+  protected $user;
+
+  /**
    * Modules to enable.
    *
    * @var array
@@ -86,7 +93,7 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->store->set('billing_countries', ['FR', 'US']);
@@ -222,6 +229,8 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
       'card_number' => '9999',
       'reusable' => FALSE,
     ]);
+
+    $this->user = $this->createUser(['view commerce_product', 'access checkout']);
   }
 
   /**
@@ -287,6 +296,11 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
    * Tests checkout with a new payment method.
    */
   public function testCheckoutWithNewPaymentMethod() {
+    // Note that we test with a different user with less rights to ensure
+    // the billing profile can be viewed on the review step.
+    $this->drupalLogin($this->user);
+    $this->defaultProfile->setOwner($this->user);
+    $this->defaultProfile->save();
     // Test the 'capture' setting of PaymentProcess while here.
     /** @var \Drupal\commerce_checkout\Entity\CheckoutFlow $checkout_flow */
     $checkout_flow = CheckoutFlow::load('default');
@@ -724,8 +738,7 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
     $order = Order::load(1);
     $this->assertFalse($order->isLocked());
     $this->assertEquals('stored_offsite', $order->get('payment_gateway')->target_id);
-    // @todo PaymentUpdater should sync this from the payment. https://www.drupal.org/project/commerce/issues/3137636
-    // $this->assertEquals(3, $order->get('payment_method')->target_id);
+    $this->assertEquals(3, $order->get('payment_method')->target_id);
     $payment = Payment::load(1);
     $this->assertNotNull($payment);
     $this->assertEquals($payment->getAmount(), $order->getTotalPrice());
@@ -749,11 +762,10 @@ class PaymentCheckoutTest extends CommerceWebDriverTestBase {
     $this->submitForm([], 'Pay and complete purchase');
     $this->assertSession()->pageTextContains('Your order number is 2. You can view your order on your account page when logged in.');
 
-    $order = Order::load(1);
+    $order = Order::load(2);
     $this->assertFalse($order->isLocked());
     $this->assertEquals('stored_offsite', $order->get('payment_gateway')->target_id);
-    // @todo PaymentUpdater should sync this from the payment. https://www.drupal.org/project/commerce/issues/3137636
-    // $this->assertEquals(3, $order->get('payment_method')->target_id);
+    $this->assertEquals(3, $order->get('payment_method')->target_id);
     $payment = Payment::load(1);
     $this->assertNotNull($payment);
     $this->assertEquals($payment->getAmount(), $order->getTotalPrice());

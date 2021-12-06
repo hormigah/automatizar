@@ -157,6 +157,12 @@ function template_preprocess_commerce_order(array &$variables) {
   foreach (Element::children($variables['elements']) as $key) {
     $variables['order'][$key] = $variables['elements'][$key];
   }
+  // Inject order fields not manually printed in a separate variable for easier
+  // rendering.
+  if (in_array($view_mode, ['user', 'admin'])) {
+    $printed_fields = ['order_items', 'total_price', 'activity', 'completed', 'placed', 'changed', 'uid', 'mail', 'ip_address', 'billing_information', 'shipping_information', 'state', 'balance'];
+    $variables['additional_order_fields'] = array_diff_key($variables['order'], array_combine($printed_fields, $printed_fields));
+  }
 
   if ($billing_profile = $order->getBillingProfile()) {
     $profile_view_bulder = \Drupal::entityTypeManager()->getViewBuilder('profile');
@@ -216,6 +222,26 @@ function commerce_order_entity_type_build(array &$entity_types) {
   $entity_types['profile']->setFormClass('address-book-add', 'Drupal\commerce_order\Form\ProfileAddressBookForm');
   $entity_types['profile']->setFormClass('address-book-edit', 'Drupal\commerce_order\Form\ProfileAddressBookForm');
   $entity_types['profile']->setFormClass('address-book-delete', 'Drupal\commerce_order\Form\ProfileAddressBookDeleteForm');
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function commerce_order_entity_type_alter(array &$entity_types) {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
+  // During tests, always have order versioning throw an exception.
+  if (drupal_valid_test_ua()) {
+    $entity_types['commerce_order']->set('log_version_mismatch', FALSE);
+  }
+  else {
+    $config = \Drupal::config('commerce_order.settings');
+    $entity_types['commerce_order']->set('log_version_mismatch', $config->get('log_version_mismatch'));
+  }
+  // Remove the "EntityChanged" constraint, our "OrderVersion" constraint
+  // replaces it.
+  $constraints = $entity_types['commerce_order']->getConstraints();
+  unset($constraints['EntityChanged']);
+  $entity_types['commerce_order']->setConstraints($constraints);
 }
 
 /**
@@ -397,4 +423,15 @@ function commerce_order_jsonapi_commerce_order_filter_access(EntityTypeInterface
   return ([
     JSONAPI_FILTER_AMONG_ALL => AccessResult::allowed(),
   ]);
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function commerce_order_theme_registry_alter(&$theme_registry) {
+  $theme_registry['commerce_price_calculated']['variables'] += [
+    'result' => NULL,
+    'base_price' => NULL,
+    'adjustments' => [],
+  ];
 }

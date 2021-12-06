@@ -4,6 +4,8 @@ namespace Drupal\Tests\webform_entity_print\Functional;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\user\Entity\Role;
 use Drupal\webform\Entity\Webform;
 use Drupal\webform\Entity\WebformSubmission;
 
@@ -27,9 +29,9 @@ class WebformEntityPrintFunctionalTest extends WebformEntityPrintFunctionalTestB
 
     $this->drupalLogin($this->rootUser);
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // PDF link default.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     $webform = Webform::load('test_entity_print');
     $sid = $this->postSubmissionTest($webform);
@@ -90,6 +92,19 @@ body {
     $this->assertRaw('<th>textfield</th>');
     $this->assertRaw('<table class="webform-submission-table" data-striping="1">');
 
+    $this->drupalLogout();
+
+    // Check PDF link token support.
+    // Allow anonymous users to access print version.
+    $role_object = Role::load(AccountInterface::ANONYMOUS_ROLE);
+    $role_object->grantPermission('entity print access type webform_submission');
+    $role_object->save();
+    $token = $submission->getToken();
+    $this->drupalGet("/webform/test_entity_print/submissions/$sid", ['query' => ['token' => $token]]);
+    $this->assertLinkByHref("{$base_path}print/pdf/webform_submission/$sid?view_mode=html&token=$token");
+
+    $this->drupalLogin($this->rootUser);
+
     // Check PDF link customizable.
     $edit = [
       'third_party_settings[webform_entity_print][export_types][pdf][link_text]' => 'Generate PDF',
@@ -107,9 +122,9 @@ body {
     $this->drupalGet("/admin/structure/webform/manage/test_entity_print/submission/$sid");
     $this->assertNoLink('Download PDF');
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // Exporter.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     /** @var \Drupal\webform\WebformSubmissionExporterInterface $submission_exporter */
     $submission_exporter = \Drupal::service('webform_submission.exporter');
@@ -126,9 +141,9 @@ body {
     $files = $this->getArchiveContents($submission_exporter->getArchiveFilePath());
     $this->assertEquals(["submission-$sid.pdf" => "submission-$sid.pdf"], $files);
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // PDF link custom.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     $webform = Webform::load('test_entity_print_custom');
     $sid = $this->postSubmissionTest($webform);

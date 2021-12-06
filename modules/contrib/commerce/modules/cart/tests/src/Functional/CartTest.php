@@ -55,7 +55,7 @@ class CartTest extends OrderBrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->variations = [$this->variation];
@@ -170,6 +170,25 @@ class CartTest extends OrderBrowserTestBase {
     $this->assertSession()->fieldValueEquals('edit-edit-quantity-1', 3);
     $this->assertSession()->elementTextContains('css', '.order-total-line', 'Total');
     $this->assertSession()->pageTextContains('$3,048.00');
+  }
+
+  /**
+   * Tests the cart page with a locked order item.
+   */
+  public function testLockedOrderItems() {
+    $this->cartManager->emptyCart($this->cart);
+
+    $order_item = $this->cartManager->createOrderItem($this->variations[0], 2);
+    $order_item->lock();
+    $this->cartManager->addOrderItem($this->cart, $order_item);
+
+    // Check that the order item is displayed, and the quantity form element and
+    // the Remove button are not displayed.
+    $this->drupalGet('cart');
+    $this->assertSession()->pageTextContains('$999.00');
+    $this->assertSession()->elementContains('css', '#edit-edit-quantity-0', '2');
+    $this->assertSession()->fieldNotExists('edit-edit-quantity-0');
+    $this->assertSession()->buttonNotExists('Remove');
   }
 
 }

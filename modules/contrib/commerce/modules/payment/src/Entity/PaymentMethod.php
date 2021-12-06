@@ -28,9 +28,11 @@ use Drupal\profile\Entity\ProfileInterface;
  *   bundle_plugin_type = "commerce_payment_method_type",
  *   handlers = {
  *     "access" = "Drupal\commerce_payment\PaymentMethodAccessControlHandler",
+ *     "permission_provider" = "Drupal\commerce_payment\PaymentMethodPermissionProvider",
  *     "list_builder" = "Drupal\commerce_payment\PaymentMethodListBuilder",
  *     "storage" = "Drupal\commerce_payment\PaymentMethodStorage",
  *     "views_data" = "Drupal\commerce\CommerceEntityViewsData",
+ *     "storage_schema" = "Drupal\commerce\CommerceContentEntityStorageSchema",
  *     "form" = {
  *       "edit" = "Drupal\commerce_payment\Form\PaymentMethodEditForm",
  *       "delete" = "Drupal\commerce_payment\Form\PaymentMethodDeleteForm"
@@ -41,6 +43,9 @@ use Drupal\profile\Entity\ProfileInterface;
  *   },
  *   base_table = "commerce_payment_method",
  *   admin_permission = "administer commerce_payment_method",
+ *   field_indexes = {
+ *     "remote_id"
+ *   },
  *   entity_keys = {
  *     "id" = "method_id",
  *     "uuid" = "uuid",
@@ -272,7 +277,7 @@ class PaymentMethod extends ContentEntityBase implements PaymentMethodInterface 
       ])
       ->setDisplayOptions('view', [
         'label' => 'hidden',
-        'type' => 'entity_reference_entity_view',
+        'type' => 'commerce_payment_method_profile',
         'weight' => 2,
       ])
       ->setDisplayConfigurable('view', TRUE);

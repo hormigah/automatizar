@@ -28,23 +28,27 @@ class OrderItemPercentageOff extends OrderItemPromotionOfferBase {
     $order_item = $entity;
     $percentage = $this->getPercentage();
     if ($this->configuration['display_inclusive']) {
+      // First, get the adjusted unit price to ensure the order item is not
+      // already fully discounted.
+      $adjusted_unit_price = $order_item->getAdjustedUnitPrice(['promotion']);
+
+      // The adjusted unit price is already reduced to 0, no need to continue
+      // further.
+      if ($adjusted_unit_price->isZero()) {
+        return;
+      }
       // Display-inclusive promotions must first be applied to the unit price.
-      $unit_price = $order_item->getUnitPrice();
-      $amount = $unit_price->multiply($percentage);
+      $amount = $adjusted_unit_price->multiply($percentage);
       $amount = $this->rounder->round($amount);
-      $new_unit_price = $unit_price->subtract($amount);
+      $new_unit_price = $order_item->getUnitPrice()->subtract($amount);
       $order_item->setUnitPrice($new_unit_price);
       $adjustment_amount = $amount->multiply($order_item->getQuantity());
     }
     else {
-      $adjustment_amount = $order_item->getTotalPrice()->multiply($percentage);
+      $adjusted_total_price = $order_item->getAdjustedTotalPrice(['promotion']);
+      $adjustment_amount = $adjusted_total_price->multiply($percentage);
     }
     $adjustment_amount = $this->rounder->round($adjustment_amount);
-
-    $order = $order_item->getOrder();
-    if ($adjustment_amount->greaterThan($order->getTotalPrice())) {
-      $adjustment_amount = $order->getTotalPrice();
-    }
 
     // Skip applying the promotion if there's no amount to discount.
     if ($adjustment_amount->isZero()) {

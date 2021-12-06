@@ -33,9 +33,32 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
   }
 
   /**
+   * Tests settings translate.
+   */
+  public function testSettingsTranslate() {
+    // Login admin user.
+    $this->drupalLogin($this->rootUser);
+
+    $this->drupalGet('/admin/structure/webform/config/translate/fr/add');
+
+    // Check custom HTML source and translation.
+    $mail_default_body_html = \Drupal::config('webform.settings')->get('mail.default_body_html');
+    $this->assertRaw('<span lang="en">' . $mail_default_body_html . '</span>');
+    $this->assertCssSelect('textarea.js-html-editor[name="translation[config_names][webform.settings][settings][default_form_open_message][value]"]');
+
+    // Check custom YAML source and translation.
+    $this->assertCssSelect('#edit-source-config-names-webformsettings-test-types textarea.js-webform-codemirror.yaml');
+    $this->assertCssSelect('textarea.js-webform-codemirror.yaml[name="translation[config_names][webform.settings][test][types]"]');
+
+    // Check custom plain text source and translation.
+    $this->assertCssSelect('#edit-source-config-names-webformsettings-mail-default-body-text textarea.js-webform-codemirror.text');
+    $this->assertCssSelect('textarea.js-webform-codemirror.text[name="translation[config_names][webform.settings][mail][default_body_text]"]');
+  }
+
+  /**
    * Tests webform translate.
    */
-  public function testTranslate() {
+  public function testWebformTranslate() {
     // Login admin user.
     $this->drupalLogin($this->rootUser);
 
@@ -46,6 +69,7 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
     /** @var \Drupal\webform\WebformTranslationManagerInterface $translation_manager */
     $translation_manager = \Drupal::service('webform.translation_manager');
 
+    /** @var \Drupal\webform\WebformInterface $webform */
     $webform = Webform::load('test_translation');
     $elements_raw = \Drupal::config('webform.webform.test_translation')->get('elements');
     $elements = Yaml::decode($elements_raw);
@@ -168,6 +192,21 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
     // Check default elements.
     $this->drupalGet('/admin/structure/webform/manage/test_translation/translate/fr/add');
 
+    // Check custom HTML Editor.
+    $this->assertCssSelect('textarea.js-html-editor[name="translation[config_names][webform.webform.test_translation][description][value]"]');
+
+    // Check email body's HTML Editor.
+    $this->assertCssSelect('textarea.js-html-editor[name="translation[config_names][webform.webform.test_translation][handlers][email_confirmation][settings][body][value]"]');
+
+    // Check email body's Twig Editor.
+    $handler = $webform->getHandler('email_confirmation');
+    $configuration = $handler->getConfiguration();
+    $configuration['settings']['twig'] = TRUE;
+    $handler->setConfiguration($configuration);
+    $webform->save();
+    $this->drupalGet('/admin/structure/webform/manage/test_translation/translate/fr/add');
+    $this->assertCssSelect('textarea.js-webform-codemirror.twig[name="translation[config_names][webform.webform.test_translation][handlers][email_confirmation][settings][body]"]');
+
     // Check customized maxlengths.
     $this->assertCssSelect('input[name$="[title]"]');
     $this->assertNoCssSelect('input[name$="[title][maxlength"]');
@@ -196,9 +235,9 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
     $translation_element = $translation_manager->getElements($webform, 'fr', TRUE);
     $this->assertEqual(['textfield' => ['#title' => 'French']], $translation_element);
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // Submissions.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     // Check English table headers are not translated.
     $this->drupalGet('/admin/structure/webform/manage/test_translation/results/submissions');
@@ -226,12 +265,13 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
     $this->assertNoRaw('Site name: Sitio web de prueba');
     $this->assertNoRaw('Site name: Sitio web de prueba');
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // Site wide language.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     // Make sure the site language is English (en).
     \Drupal::configFactory()->getEditable('system.site')->set('default_langcode', 'en')->save();
+    drupal_flush_all_caches();
 
     $language_manager = \Drupal::languageManager();
 
@@ -261,10 +301,11 @@ class WebformEntityTranslationTest extends WebformBrowserTestBase {
     $this->drupalGet('/webform/test_translation', ['language' => $language_manager->getLanguage('fr')]);
     $this->assertRaw('<label for="edit-textfield">French</label>');
 
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     // Make sure the site language is English (en).
     \Drupal::configFactory()->getEditable('system.site')->set('default_langcode', 'en')->save();
+    drupal_flush_all_caches();
 
     // Duplicate translated webform.
     $edit = [

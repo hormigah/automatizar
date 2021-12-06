@@ -21,7 +21,7 @@ use Drupal\webform\WebformSubmissionInterface;
 /**
  * The name of the query parameter for webform entity print image tokens.
  */
-define('WEBFORM_ENTITY_PRINT_IMAGE_TOKEN', 'webform_entity_print_itok');
+define('WEBFORM_ENTITY_PRINT_IMAGE_TOKEN', 'webform_entity_print_itok'); // phpcs:ignore
 
 /**
  * Implements hook_webform_submission_access().
@@ -171,6 +171,11 @@ function _webform_entity_print_webform_submission_links(array &$build, EntityInt
       'export_type' => trim($export_type, '_engine'),
     ];
     $route_options = ['query' => ['view_mode' => $view_mode]];
+    // Attach the URL's token query parameter used to grant view permission.
+    $token = \Drupal::request()->get('token');
+    if ($token && $token === $entity->getToken()) {
+      $route_options['query']['token'] = $token;
+    }
 
     $link_attributes = $export_settings['link_attributes'];
     $link_attributes += ['class' => []];
@@ -281,7 +286,7 @@ function webform_entity_print_preprocess_entity_print(array &$variables) {
   $webform_id = $webform->id();
   $sid = $webform_submission->id();
 
-  // Render the webform submission data
+  // Render the webform submission data.
   $html = (string) \Drupal::service('renderer')->render($content);
 
   // Only matching <img src=""/>.

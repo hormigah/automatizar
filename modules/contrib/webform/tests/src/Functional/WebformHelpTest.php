@@ -30,9 +30,9 @@ class WebformHelpTest extends WebformBrowserTestBase {
    */
   public function testHelp() {
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // Help page.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     // Check access denied to the webform help page.
     $this->drupalGet('/admin/structure/webform/help');
@@ -62,9 +62,9 @@ class WebformHelpTest extends WebformBrowserTestBase {
     $this->assertResponse(200);
     $this->assertRaw('Watch more videos');
 
-    /**************************************************************************/
+    /* ********************************************************************** */
     // Help block.
-    /**************************************************************************/
+    /* ********************************************************************** */
 
     $this->drupalLogin($this->rootUser);
 
@@ -72,7 +72,7 @@ class WebformHelpTest extends WebformBrowserTestBase {
     $this->drupalGet('/admin/structure/webform');
     $this->assertRaw('This is a warning notification.');
     $this->assertRaw('This is an info notification.');
-    $this->assertRaw('If you enjoy and value Drupal and the Webform module,');
+    $this->assertRaw('If you enjoy and value Drupal and the Webform module consider');
 
     // Close all notifications, promotion, and welcome messages.
     $this->drupalGet('/admin/structure/webform');
@@ -86,7 +86,7 @@ class WebformHelpTest extends WebformBrowserTestBase {
     $this->drupalGet('/admin/structure/webform');
     $this->assertNoRaw('This is a warning notification.');
     $this->assertNoRaw('This is an info notification.');
-    $this->assertNoRaw('If you enjoy and value Drupal and the Webform module,');
+    $this->assertNoRaw('If you enjoy and value Drupal and the Webform module consider');
 
     // Check that help is enabled.
     $this->drupalGet('/admin/structure/webform/config/advanced');
